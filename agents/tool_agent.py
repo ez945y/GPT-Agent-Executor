@@ -33,11 +33,9 @@ class ToolAgent(Agent):
                 sequence += 1  # 序列號遞增
                 if tool_info:
                     tool = tools[tool_info["tool_name"]]["func"]
-                    args = {}
-                    for arg_name in tool_info["args"]:
-                        args[arg_name] = response
-                    # tool_output = tool(**args)
-                    # await CachePool.add({"我得知": tool_output})
+                    tool_output = tool(**tool_info['args'])
+                    if tool_output:
+                        await CachePool.add({"我得知": tool_output})
             await asyncio.sleep(0.1)
 
     def _format_tool_list(self) -> str:

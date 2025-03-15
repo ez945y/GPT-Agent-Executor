@@ -15,8 +15,8 @@ class ThinkAgent(Agent):
             self.set_prompt(personlitity_prompt_template)
             prompt_text = self.prompt.format()
             response = Model.generate(prompt_text, self.model_name)
-            await CachePool.add({"你將扮演": prompt_text})
-            await CachePool.add({"我": response})
+            # await CachePool.add({"你將扮演": prompt_text})
+            # await CachePool.add({"我": response})
             self.set_prompt(think_prompt_template)
         await self.step()
         
@@ -26,7 +26,7 @@ class ThinkAgent(Agent):
             with agent_lock:
                 self.prompt.set_variable("cache_pool", CachePool.get())
                 prompt_text = self.prompt.format()
-                print(prompt_text)
+                # print(prompt_text)
 
                 response = Model.generate(prompt_text, self.model_name)
                 await CachePool.add({"我": response})

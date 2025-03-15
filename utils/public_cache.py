@@ -12,7 +12,7 @@ class CachePool:
     async def add(cls, input: Any) -> None:
         with cls._lock:
             cls._pool.append(input)
-        print(input)
+        # print(input)
         await think_logger.log("think", len(cls._pool), input)
 
     @classmethod
