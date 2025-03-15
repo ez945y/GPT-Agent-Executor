@@ -1,5 +1,11 @@
 from typing import List, Optional
 from utils.prompts import Prompt
+from dotenv import load_dotenv
+import os 
+
+load_dotenv()
+
+MODEL_NAME = os.getenv("MODEL_NAME", "gemini-flash-2.0")
 
 class Agent:
     """
@@ -8,7 +14,7 @@ class Agent:
     此類別定義了代理的基本結構和行為，包括設定模型、提示、啟動和執行步驟。
     """
 
-    def __init__(self, model_name: str = "llama3.1:8b"):
+    def __init__(self, model_name: str = MODEL_NAME):
         """
         初始化代理
 

@@ -1,0 +1,45 @@
+timestamp,sequence,message
+2025-03-15T20:29:54.968281,1,{'我': '晚餐吃什麼？\n'}
+2025-03-15T20:29:56.485464,2,{'我': '雞排？\n'}
+2025-03-15T20:29:57.122855,3,{'我得知': '決定晚餐吃什麼'}
+2025-03-15T20:29:58.050766,4,{'我': '雞排加珍奶好了。\n'}
+2025-03-15T20:29:58.869683,5,{'我得知': '決定晚餐吃什麼'}
+2025-03-15T20:29:59.586706,6,{'我': '等等，要不要加辣？\n'}
+2025-03-15T20:30:00.611732,7,{'我得知': 'I say:好猶豫，還是上網查一下雞排推薦好了。'}
+2025-03-15T20:30:01.134606,8,{'我': '手機拿起來...\n'}
+2025-03-15T20:30:02.453845,9,{'我得知': '決定晚餐吃什麼'}
+2025-03-15T20:30:03.168930,10,{'我': '雞排...還是滷味？\n'}
+2025-03-15T20:30:05.011552,10,{'我得知': '標題：台北雞排7選｜外酥內嫩又多汁，超級邪惡！\n摘要：台北雞排#1：緯大雞排 · 台北雞排#2：艋舺雞排 · 台北雞排#3：180度C蜜酥雞排 · 台北雞排#4：男子漢雞排 · 台北雞排#5：怪獸小雞排 · 台北雞排#6：龍哥無骨雞腿排.'}
+2025-03-15T20:30:05.626617,10,{'我': '緯大...感覺不錯？\n'}
+2025-03-15T20:30:07.419803,10,{'我得知': '標題：緯大雞排｜台北最強雞排隨時都有6~7個員工但最厲害的竟然 ...\n摘要：《緯大雞排》吃起來真的比較沒那麼乾，雖然打薄但厚度還有，有些比臉大的雞排薄到不行，雖然雞排麵衣跟肉還是會有一點點貌合神離感，但不會扣太多分數，是我 ...'}
+2025-03-15T20:30:07.878666,10,{'我': '等等...滷味好像也行...\n'}
+2025-03-15T20:30:11.569089,10,{'我得知': '標題：台北滷味推薦》連米其林都敲碗認證！饕客激推8間必吃名店\n摘要：台北滷味推薦》連米其林都敲碗認證！饕客激推8間必吃名店，不用花大錢就能享用五星級美味 · 1. 老天祿 · 2. 阿國滷味 · 3. 四川特色滷味 · 4. 陸光小吃館.'}
+2025-03-15T20:30:12.079293,10,{'我': '阿國滷味...好像很厲害？\n'}
+2025-03-15T20:30:13.271477,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:14.469817,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:15.677418,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:16.889932,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:18.090602,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:19.278192,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:20.485860,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:21.672647,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:22.867509,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:24.061987,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:25.251493,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:26.448964,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:27.637448,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:28.860891,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:30.056254,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:31.244446,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:32.441969,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:33.638537,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:34.832209,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:36.035145,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:37.231666,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:38.428976,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:39.621790,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:40.830916,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:42.033476,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:43.235898,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:44.429725,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:30:45.624934,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}

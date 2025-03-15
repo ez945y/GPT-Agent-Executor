@@ -1,0 +1,97 @@
+timestamp,sequence,message
+2025-03-15T20:28:13.506130,1,{'我': '晚餐吃什麼？\n'}
+2025-03-15T20:28:14.145006,2,{'我': '雞排加珍奶好了。\n'}
+2025-03-15T20:28:14.844757,3,{'我': '好想打電動喔。\n'}
+2025-03-15T20:28:15.647656,4,{'我': '等等來開個LOL好了。\n'}
+2025-03-15T20:28:16.349826,5,{'我得知': '稍晚玩英雄聯盟'}
+2025-03-15T20:28:16.978257,6,{'我': '先洗個澡好了。\n'}
+2025-03-15T20:28:17.592939,7,{'我得知': '稍晚玩英雄聯盟'}
+2025-03-15T20:28:18.209860,8,{'我': '洗完更快玩！\n'}
+2025-03-15T20:28:18.720512,9,{'我得知': '稍晚玩英雄聯盟'}
+2025-03-15T20:28:19.436653,10,{'我': '等等要選哪個英雄？\n'}
+2025-03-15T20:28:20.160078,10,{'我得知': '決定等等英雄聯盟要選哪個英雄'}
+2025-03-15T20:28:20.748461,10,{'我': '要不要先看一下攻略？\n'}
+2025-03-15T20:28:22.320258,10,{'我得知': '標題：【攻略】寫給新手：用最快的速度帶你認識全英雄（2/21更新4個 ...\n摘要：1. Q是機器人的精隨，占了機器人80%以上的功用，沒有把握勾中不要貿然出手 · 2. 可以先用W（給自己加速）往前逼對面的走位，或是走到對方臉上用E（下次普攻擊飛 ...'}
+2025-03-15T20:28:23.021223,10,{'我': '機器人好像不錯？\n'}
+2025-03-15T20:28:24.622074,10,{'我得知': '標題：LOL蒸汽机器人布里茨英雄介绍、技能加点\n摘要：解析：自保非常实用的被动，前期的在对线中，及时被集火，也能保证机器人残血逃生，在后期拥有足够的蓝量之后，被动的护盾会变得非常之后，能够保证团战中为adc承受足够的伤害。'}
+2025-03-15T20:28:25.273415,10,{'我': '機器人...坦度好像蠻高的？\n'}
+2025-03-15T20:28:25.636625,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:26.026830,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:26.404708,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:26.783196,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:27.157490,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:27.539715,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:27.921669,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:28.302797,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:28.690507,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:29.071078,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:29.456278,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:29.832240,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:30.392071,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:30.768858,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:31.154844,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:31.520132,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:31.897662,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:32.274288,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:32.652020,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:33.037410,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:33.409718,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:33.783824,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:34.182217,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:34.558474,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:34.921013,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:35.295206,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:35.678421,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:36.063007,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:36.439139,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:36.815346,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:37.198507,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:37.575305,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:37.950893,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:38.331343,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:38.707137,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:39.078213,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:39.457620,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:39.840082,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:40.226900,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:40.605369,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:40.985842,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:41.358635,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:41.731349,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:42.100922,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:42.470589,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:42.836708,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:43.203167,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:43.574772,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:43.952605,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:44.331512,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:44.696047,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:45.069961,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:45.436923,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:45.805914,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:46.179920,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:46.566284,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:46.931792,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:47.300857,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:47.656032,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:48.021560,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:48.391597,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:48.772169,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:49.146679,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:49.504146,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:49.873467,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:50.253394,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:50.616770,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:50.992012,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:51.603006,10,{'我得知': '設定一個有意義的目標，例如：了解當前熱門話題。'}
+2025-03-15T20:28:51.783665,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:28:52.263275,10,{'我得知': '了解當前熱門話題'}
+2025-03-15T20:28:52.789572,10,{'我': '等等，現在流行什麼？\n'}
+2025-03-15T20:28:59.583712,10,{'我得知': '標題：今日热榜官网\n摘要：今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、抖音...追踪全网热点、简单高效阅读。'}
+2025-03-15T20:29:00.193990,10,{'我': '熱榜是什麼東東？\n'}
+2025-03-15T20:29:00.846276,10,{'我得知': '標題：今日热榜官网\n摘要：今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、抖音...追踪全网热点、简单高效阅读。'}
+2025-03-15T20:29:01.328649,10,{'我': '喔，所以是整理熱門話題的網站？\n'}
+2025-03-15T20:29:01.905445,10,{'我得知': '查詢今日熱門話題，以便了解當前流行趨勢。'}
+2025-03-15T20:29:02.427977,10,{'我': '看看現在流行什麼。\n'}
+2025-03-15T20:29:03.164928,10,{'我得知': '標題：今日热榜官网\n摘要：今日热榜提供各站热榜聚合：微信、今日头条、百度、知乎、V2EX、微博、贴吧、豆瓣、天涯、虎扑、Github、抖音...追踪全网热点、简单高效阅读。'}
+2025-03-15T20:29:03.673439,10,{'我': '這網站感覺很方便。\n'}

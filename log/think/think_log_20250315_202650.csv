@@ -1,0 +1,63 @@
+timestamp,sequence,message
+2025-03-15T20:26:51.372402,1,{'我': '晚餐要吃什麼？\n'}
+2025-03-15T20:26:51.985727,2,{'我': '雞排？\n'}
+2025-03-15T20:26:52.598574,3,{'我': '有點油…\n'}
+2025-03-15T20:26:53.215851,4,{'我': '滷味好像不錯。\n'}
+2025-03-15T20:26:53.930992,5,{'我得知': 'I say:滷味有哪些配料？'}
+2025-03-15T20:26:54.547935,6,{'我': '王子麵要加嗎？\n'}
+2025-03-15T20:26:55.264064,7,{'我得知': 'I say:等等來點滷味當下午茶。'}
+2025-03-15T20:26:55.772890,8,{'我': '等等吃什麼口味？\n'}
+2025-03-15T20:26:56.376676,9,{'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}
+2025-03-15T20:26:57.105765,10,{'我': '要不要加辣？\n'}
+2025-03-15T20:26:57.652442,10,{'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}
+2025-03-15T20:26:58.232403,10,{'我': '加辣好像不錯。\n'}
+2025-03-15T20:26:58.876731,10,{'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}
+2025-03-15T20:26:59.493498,10,{'我': '豆干要切多大？\n'}
+2025-03-15T20:27:00.488193,10,{'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}
+2025-03-15T20:27:01.013015,10,{'我': '要不要加點海帶？\n'}
+2025-03-15T20:27:01.417009,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:01.972407,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:02.365726,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:02.769855,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:03.162561,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:03.537894,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:04.052588,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:04.437269,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:04.823473,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:05.199675,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:05.582750,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:05.950398,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:06.326220,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:06.708982,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:07.551251,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:07.938983,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:08.318776,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:08.695563,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:09.069933,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:09.904552,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:10.274857,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:10.647015,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:11.024909,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:11.393972,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:11.767964,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:12.141043,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:12.508399,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:12.873236,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:13.256237,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:13.641773,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:14.019191,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:14.385749,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:14.759243,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:15.155687,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:15.528145,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:15.896006,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:16.262366,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:16.636104,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:17.003542,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:17.388473,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:17.758735,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:18.130578,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:18.495024,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:18.882007,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:19.254821,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+2025-03-15T20:27:19.625151,10,{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}

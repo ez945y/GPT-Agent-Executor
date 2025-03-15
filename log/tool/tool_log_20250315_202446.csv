@@ -1,0 +1,1135 @@
+timestamp,sequence,message
+2025-03-15T20:24:48.876807,1,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:48.877160,1,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:49.266661,2,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:49.267193,2,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:50.324433,3,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:50.324917,3,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:51.357377,4,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:51.357990,4,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:51.738067,5,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:51.738412,5,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:52.114906,6,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:52.115685,6,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:52.505256,7,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:52.506225,7,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:52.882675,8,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:52.883263,8,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:53.258144,9,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:53.258423,9,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:53.630393,10,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:53.631104,10,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:54.005147,11,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:54.005553,11,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:54.374402,12,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:54.374951,12,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:54.751437,13,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:54.751859,13,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:55.851168,14,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:55.853594,14,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:56.225413,15,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:56.225915,15,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:56.601185,16,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:56.601770,16,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:56.975371,17,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:56.975827,17,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:57.356652,18,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:57.356890,18,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:57.733780,19,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:57.734095,19,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:58.105786,20,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:58.106058,20,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:58.477277,21,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:58.477776,21,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:58.854641,22,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:58.855111,22,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:59.230589,23,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:59.231087,23,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:59.604414,24,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:59.604706,24,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:24:59.974361,25,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:24:59.974719,25,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:00.345368,26,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:00.345614,26,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:00.724043,27,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:00.724442,27,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:01.107789,28,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:01.108099,28,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:01.479686,29,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:01.480144,29,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:01.850065,30,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:01.850330,30,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:02.215843,31,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:02.216914,31,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:02.584209,32,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:02.584411,32,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:02.949551,33,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:02.949812,33,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:03.323692,34,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:03.324041,34,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:03.704395,35,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:03.704835,35,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:04.069805,36,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:04.070046,36,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:04.436933,37,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:04.437227,37,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:04.812883,38,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:04.813138,38,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:05.181548,39,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:05.181864,39,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:05.544976,40,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:05.545448,40,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:05.980108,41,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:05.980317,41,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."
+2025-03-15T20:25:06.340577,42,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}, {'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}
+"
+2025-03-15T20:25:06.340823,42,"API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods."

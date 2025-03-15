@@ -1,0 +1,1468 @@
+timestamp,sequence,message
+2025-03-15T20:26:53.930169,1,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '晚餐要吃什麼？\n'}, {'我': '雞排？\n'}, {'我': '有點油…\n'}, {'我': '滷味好像不錯。\n'}
+"
+2025-03-15T20:26:53.930672,1,"{
+  ""tool_name"": ""自然表達"",
+  ""args"": {
+    ""sentence"": ""滷味有哪些配料？""
+  }
+}
+"
+2025-03-15T20:26:55.263477,2,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '雞排？\n'}, {'我': '有點油…\n'}, {'我': '滷味好像不錯。\n'}, {'我得知': 'I say:滷味有哪些配料？'}, {'我': '王子麵要加嗎？\n'}
+"
+2025-03-15T20:26:55.263826,2,"{
+  ""tool_name"": ""自然表達"",
+  ""args"": {
+    ""sentence"": ""等等來點滷味當下午茶。""
+  }
+}
+"
+2025-03-15T20:26:56.375757,3,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '滷味好像不錯。\n'}, {'我得知': 'I say:滷味有哪些配料？'}, {'我': '王子麵要加嗎？\n'}, {'我得知': 'I say:等等來點滷味當下午茶。'}, {'我': '等等吃什麼口味？\n'}
+"
+2025-03-15T20:26:56.376179,3,"{
+  ""tool_name"": ""設定目標"",
+  ""args"": {
+    ""target"": ""決定滷味的口味和配料，作為下午茶的目標。""
+  }
+}
+"
+2025-03-15T20:26:57.651591,4,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '王子麵要加嗎？\n'}, {'我得知': 'I say:等等來點滷味當下午茶。'}, {'我': '等等吃什麼口味？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '要不要加辣？\n'}
+"
+2025-03-15T20:26:57.652104,4,"{
+  ""tool_name"": ""設定目標"",
+  ""args"": {
+    ""target"": ""決定滷味的口味和配料，作為下午茶的目標。""
+  }
+}
+"
+2025-03-15T20:26:58.875438,5,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '等等吃什麼口味？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '要不要加辣？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '加辣好像不錯。\n'}
+"
+2025-03-15T20:26:58.876168,5,"{
+  ""tool_name"": ""設定目標"",
+  ""args"": {
+    ""target"": ""決定滷味的口味和配料，作為下午茶的目標。""
+  }
+}
+"
+2025-03-15T20:27:00.487327,6,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '要不要加辣？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '加辣好像不錯。\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '豆干要切多大？\n'}
+"
+2025-03-15T20:27:00.487776,6,"{
+  ""tool_name"": ""設定目標"",
+  ""args"": {
+    ""target"": ""決定滷味的口味和配料，作為下午茶的目標。""
+  }
+}
+"
+2025-03-15T20:27:01.218041,7,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '加辣好像不錯。\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '豆干要切多大？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '要不要加點海帶？\n'}
+"
+2025-03-15T20:27:01.218652,7,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:01.779628,8,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '豆干要切多大？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '要不要加點海帶？\n'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:01.780248,8,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:02.174202,9,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '豆干要切多大？\n'}, {'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '要不要加點海帶？\n'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:02.174442,9,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:02.560400,10,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我得知': '決定滷味的口味和配料，作為下午茶的目標。'}, {'我': '要不要加點海帶？\n'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:02.560800,10,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:02.962337,11,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': '要不要加點海帶？\n'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:02.962809,11,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:03.346254,12,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:03.346664,12,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:03.862515,13,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:03.863041,13,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:04.247667,14,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:04.248027,14,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:04.625591,15,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:04.625867,15,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:05.012449,16,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:05.013070,16,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:05.390246,17,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:05.390508,17,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:05.765557,18,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:05.765864,18,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:06.141718,19,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:06.142205,19,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:06.515620,20,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:06.516059,20,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:06.907380,21,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:06.907773,21,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:07.744947,22,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:07.745692,22,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:08.132454,23,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:08.132841,23,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:08.508158,24,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:08.508577,24,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:08.883704,25,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:08.884385,25,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:09.258575,26,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:09.259107,26,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:10.093055,27,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:10.093447,27,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:10.461508,28,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:10.462087,28,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:10.833376,29,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:10.833668,29,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:11.211503,30,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:11.211756,30,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:11.581970,31,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:11.582399,31,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:11.959610,32,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:11.960326,32,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:12.319418,33,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:12.319780,33,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:12.692076,34,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:12.692459,34,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:13.069767,35,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:13.069997,35,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:13.445251,36,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:13.445767,36,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:13.826719,37,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:13.827398,37,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:14.201598,38,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:14.201842,38,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:14.576212,39,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:14.576564,39,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:14.967393,40,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:14.968454,40,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:15.340277,41,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:15.340510,41,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:15.713714,42,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:15.714121,42,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:16.078800,43,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:16.079026,43,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:16.453186,44,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:16.453491,44,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:16.817205,45,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:16.817538,45,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:17.206251,46,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:17.206483,46,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:17.568643,47,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:17.569016,47,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:17.942815,48,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:17.943202,48,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:18.309315,49,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:18.309640,49,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:18.683911,50,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:18.684260,50,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:19.066767,51,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:19.067211,51,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:19.434838,52,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:19.435582,52,API錯誤: 429 Resource has been exhausted (e.g. check quota).
+2025-03-15T20:27:19.811394,53,"
+* 你當前的目標是
+- 目前還沒有目標
+
+* 你能夠使用這些工具
+- 自然表達: 根據想法或概念，像人類一樣說出一句話。 需要參數 sentence:string
+- 網路搜尋: 使用 Google 搜尋指定一個查詢。 需要參數 query:string
+- 設定目標: 觀察自己的念頭，決定是否要修改或設定目標。 需要參數 target:string
+
+
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
+* 如果需要，請輸出以下格式的 JSON：
+{
+  ""tool_name"": ""工具名稱"",
+  ""args"": {
+    ""參數1"": ""參數值"",
+    ""參數2"": ""參數值"",
+    ...
+  }
+}
+* 如果不需要，請輸出 ""不需要工具""。
+
+{'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}, {'我': 'API錯誤: 429 Resource has been exhausted (e.g. check quota).'}
+"
+2025-03-15T20:27:19.811535,53,API錯誤: 429 Resource has been exhausted (e.g. check quota).
