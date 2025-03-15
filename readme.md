@@ -1,7 +1,7 @@
 # GPT Agent Executor：實現自主協作與持續運行
 
 # 專案內容
-
+[English version](README_EN.md)
 本專案旨在構建一個基於 GPT 的自主智能體框架，實現智能體的持續運行和協作。
 
 通過模組化的設計，我們將智能體分解為三大核心模塊：
