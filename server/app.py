@@ -11,7 +11,8 @@ async def communicate(request: Request):
         return JSONResponse({"error": "缺少文字"}, status_code=400)
 
     received_text = data["text"]
-    await CachePool.add({"user":received_text})
+    await CachePool.add({"有人對你說話":received_text})
+    print(f"你：{received_text}")
     return JSONResponse({"received_text": received_text})
 
 def run_fastapi_server():

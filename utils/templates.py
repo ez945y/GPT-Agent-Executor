@@ -18,10 +18,14 @@ personlitity_prompt_template = """
 """
 
 decision_prompt_template = """
-* 你能夠這些工具
+* 你當前的目標是
+- {current_target}
+
+* 你能夠使用這些工具
 {tool_list}
 
-* 請根據當前議題跟判斷是否需要使用tool_list裡的工具。
+* 若還沒有目標的情況下，先設定目標
+* 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
 * 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
 * 如果需要，請輸出以下格式的 JSON：
 {{

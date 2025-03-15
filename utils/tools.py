@@ -21,7 +21,7 @@ def web_search(query: str) -> str:
                 snippet = first_result.get("snippet", "無摘要")
                 # link = first_result.get("link", "#")
                 result = f"標題：{title}\n摘要：{snippet}"
-                print(f"AI搜尋{query}\n{result}")
+                print(f"搜尋了:{query}\n{result}")
                 return result
             else:
                 return "找不到相關結果。"
@@ -36,36 +36,60 @@ def express_as_sentence(sentence: str) -> str:
         return f"I say:{sentence}"
     return None
  
+def observe_thought(target: str) -> str:
+    """觀察自己的念頭，設定目標。"""
+    if target and target != "":
+        print(f"AI設定目標：{target}")
+        return target
+    return "想一下要做什麼。"
+
 # 工具清單
 tools: Dict[str, Dict[str, Any]] = {
+    "自然表達": {
+    "func": express_as_sentence,
+    "args": "sentence:string",
+    "description": "根據想法或概念，像人類一樣說出一句話。"
+    },
     "網路搜尋": {
         "func": web_search,
         "args": "query:string",
         "description": "使用 Google 搜尋指定一個查詢。"
     },
-    "自然表達": {
-        "func": express_as_sentence,
-        "args": "sentence:string",
-        "description": "根據想法或概念，像人類一樣說出一句話。"
+    "設定目標": {
+        "func": observe_thought,
+        "args": "target:string",
+        "description": "觀察自己的念頭，決定是否要修改或設定目標。"
     },
+
 }
 
 def parse_args(json_string: str) -> dict:
     try:
         data = json.loads(json_string)
         return data.get("args", {}) # 使用 get 方法避免 KeyError
+    except AttributeError:
+        return None
     except ValueError:
         return {} # 解析失敗返回空字典
     
 
 def choose_tool(model_output: str) -> Dict[str, Any]:
     """根據模型輸出選擇工具並返回工具資訊"""
-    output_json = parse_args(model_output)
-    if re.search(r"網路搜尋|搜尋|網路", model_output, re.IGNORECASE): #更靈活的選擇方式
-        return {"tool_name": "網路搜尋", "args": {"query": output_json.get("query")}}
+    try:
+        output_json = parse_args(model_output)
+        if not output_json:
+            return None
+        if re.search(r"網路搜尋|搜尋|網路", model_output, re.IGNORECASE): #更靈活的選擇方式
+            return {"tool_name": "網路搜尋", "args": {"query": output_json.get("query")}}
+            
+        elif re.search(r"自然表達|表達", model_output, re.IGNORECASE):
+            # print(output_json.get("sentence"))
+            return {"tool_name": "自然表達", "args": {"sentence": output_json.get("sentence")}}
         
-    elif re.search(r"自然表達|表達", model_output, re.IGNORECASE):
-        # print(output_json.get("sentence"))
-        return {"tool_name": "自然表達", "args": {"sentence": output_json.get("sentence")}}
-    # 添加其他工具的選擇邏輯...
-    return None
+        elif re.search(r"設定目標|設定|目標", model_output, re.IGNORECASE):
+            # print(output_json.get("sentence"))
+            return {"tool_name": "設定目標", "args": {"target": output_json.get("target")}}
+        # 添加其他工具的選擇邏輯...
+        return None
+    except ValueError:
+            return None

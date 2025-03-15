@@ -25,6 +25,7 @@ class ToolAgent(Agent):
         while True:
             with agent_lock:
                 self.prompt.set_variable("cache_pool", CachePool.get())
+                self.prompt.set_variable("current_target", CachePool.get_target())
                 think_prompt_text = self.prompt.format()
                 response = Model.generate(think_prompt_text, self.model_name)
                 tool_info = choose_tool(response)
