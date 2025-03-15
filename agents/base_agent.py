@@ -8,7 +8,7 @@ class Agent:
     此類別定義了代理的基本結構和行為，包括設定模型、提示、啟動和執行步驟。
     """
 
-    def __init__(self, model_name: str = "llama3.2"):
+    def __init__(self, model_name: str = "llama3.1:8b"):
         """
         初始化代理
 
