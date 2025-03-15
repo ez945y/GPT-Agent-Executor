@@ -72,6 +72,8 @@ def parse_args(json_string: str) -> dict:
         json_string = json_string.replace("`json", "").replace("`", "").strip()
         data = json.loads(json_string)
         return data.get("args", {})
+    except AttributeError:
+        return None
     except ValueError:
         return {}
 

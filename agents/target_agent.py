@@ -29,13 +29,13 @@ class TargetAgent(Agent):
 
                 await tool_logger.log("tool", sequence, think_prompt_text) 
                 await tool_logger.log("tool", sequence, response) 
-                
+
                 if tool_info:
                     tool = target_tool[tool_info["tool_name"]]["func"]
                     tool_output = tool(**tool_info['args'])
                     if tool_output:
                         await CachePool.add({"我決定": tool_output})
-            await asyncio.sleep(15)
+            await asyncio.sleep(60) # 2
 
     def _format_tool_list(self) -> str:
         """格式化工具清單為字串"""

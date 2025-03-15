@@ -5,7 +5,7 @@ from typing import Any
 from utils.logger import think_logger
 
 class CachePool:
-    _pool: deque[Any] = deque(maxlen=10)  # 最大長度為 100
+    _pool: deque[Any] = deque(maxlen=25)  # 最大長度為 100
     _lock: threading.Lock = threading.Lock()
     _current_target = "目前還沒有目標"
 
@@ -17,7 +17,7 @@ class CachePool:
         await think_logger.log("think", len(cls._pool), input)
 
     @classmethod
-    def get(cls, length: int = 5) -> str:
+    def get(cls, length: int = 20) -> str:
         with cls._lock:
             length = min(length, len(cls._pool))
             items = list(cls._pool)[-length:]
