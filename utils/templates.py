@@ -27,7 +27,6 @@ decision_prompt_template = """
 * 你能夠使用這些工具
 {tool_list}
 
-* 若還沒有目標的情況下，先設定目標
 * 請根據當前議題跟判斷是否需要使用tool_list裡的工具，最多只能選一個。
 * 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身。
 * 如果需要，請輸出以下格式的 JSON：
@@ -41,5 +40,26 @@ decision_prompt_template = """
 }}
 * 如果不需要，請輸出 "不需要工具"。
 
+{cache_pool}
+"""
+
+target_prompt_template = """
+* 你當前的目標是
+- {current_target}
+
+* 若還沒有目標的情況下，先設定目標
+* 若己經有目標了，先觀察目前cache_pool是否符合目標，若已經符合那就不用再修改目標了
+* 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身，不用標註這是json。
+* 如果需要，請輸出以下格式的 JSON：
+{{
+  "tool_name": "設定目標",
+  "args": {{
+    "target": "目標",
+    ...
+  }}
+}}
+* 如果不需要，請輸出 ""。
+
+cache_pool
 {cache_pool}
 """

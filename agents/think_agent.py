@@ -29,4 +29,4 @@ class ThinkAgent(Agent):
 
                 response = model.generate(prompt_text)
                 await CachePool.add({"我": response})
-            await asyncio.sleep(3)
+            await asyncio.sleep(30)

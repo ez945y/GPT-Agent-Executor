@@ -7,9 +7,11 @@ async def main():
     """主函數"""
     think_agent = agents.ThinkAgent()
     tool_agent = agents.ToolAgent()
+    target_agent = agents.TargetAgent()
     await asyncio.gather(
         tool_agent.start(),
         think_agent.start(),
+        target_agent.start(),
     )
 
 # 運行主函數

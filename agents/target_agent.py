@@ -1,22 +1,19 @@
 from agents.base_agent import Agent
 from utils.public_cache import CachePool
 from utils.llm_model import model
-from utils.templates import decision_prompt_template
-from utils.tools import choose_tool, tools
+from utils.templates import target_prompt_template
+from utils.tools import choose_tool, target_tool
 from utils.locks import agent_lock
 from utils.logger import tool_logger
 import asyncio
 
-class ToolAgent(Agent):
+class TargetAgent(Agent):
     """工具代理，根據快取池內容選擇工具"""
 
     async def start(self):
         """啟動工具代理"""
-        self.set_prompt(decision_prompt_template)
-
-        tool_list_str = self._format_tool_list()
-        self.prompt.set_variable("tool_list", tool_list_str)
-        await asyncio.sleep(4)
+        self.set_prompt(target_prompt_template)
+        await asyncio.sleep(2)
         await self.step()
 
     async def step(self):
@@ -33,17 +30,16 @@ class ToolAgent(Agent):
                 await tool_logger.log("tool", sequence, think_prompt_text) 
                 await tool_logger.log("tool", sequence, response) 
                 
-                sequence += 1  # 序列號遞增
                 if tool_info:
-                    tool = tools[tool_info["tool_name"]]["func"]
+                    tool = target_tool[tool_info["tool_name"]]["func"]
                     tool_output = tool(**tool_info['args'])
                     if tool_output:
-                        await CachePool.add({"我得知": tool_output})
+                        await CachePool.add({"我決定": tool_output})
             await asyncio.sleep(15)
 
     def _format_tool_list(self) -> str:
         """格式化工具清單為字串"""
         tool_list_str = ""
-        for tool_name, tool_info in tools.items():
+        for tool_name, tool_info in target_tool.items():
             tool_list_str += f"- {tool_name}: {tool_info['description']} 需要參數 {tool_info['args']}\n"
         return tool_list_str

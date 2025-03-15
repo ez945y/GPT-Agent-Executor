@@ -55,22 +55,26 @@ tools: Dict[str, Dict[str, Any]] = {
         "args": "query:string",
         "description": "使用 Google 搜尋指定一個查詢。"
     },
+
+}
+
+target_tool: Dict[str, Dict[str, Any]] = {
     "設定目標": {
         "func": observe_thought,
         "args": "target:string",
         "description": "觀察自己的念頭，決定是否要修改或設定目標。"
     },
-
 }
 
 def parse_args(json_string: str) -> dict:
     try:
+        # 移除標記
+        json_string = json_string.replace("`json", "").replace("`", "").strip()
         data = json.loads(json_string)
-        return data.get("args", {}) # 使用 get 方法避免 KeyError
-    except AttributeError:
-        return None
+        return data.get("args", {})
     except ValueError:
-        return {} # 解析失敗返回空字典
+        return {}
+
     
 
 def choose_tool(model_output: str) -> Dict[str, Any]:

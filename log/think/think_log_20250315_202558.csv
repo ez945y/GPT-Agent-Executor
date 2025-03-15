@@ -1,2 +1,0 @@
-timestamp,sequence,message
-2025-03-15T20:25:59.959553,1,"{'我': 'API錯誤: 404 models/gemini-flash-2.0 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.'}"
