@@ -1,14 +1,9 @@
 import ollama
 import google.generativeai as genai
 from google.api_core.exceptions import GoogleAPIError
-import os
-from dotenv import load_dotenv
 from abc import ABC, abstractmethod
+from utils.setting import Setting
 
-load_dotenv()
-
-MODEL_TYPE = os.getenv("MODEL_TYPE", "gemini") 
-MODEL_NAME = os.getenv("MODEL_NAME", "gemini-flash-2.0")
 class BaseModel(ABC):
     """模型抽象類別"""
 
@@ -24,7 +19,7 @@ class BaseModel(ABC):
 class OllamaModel(BaseModel):
     """Ollama 模型類別"""
 
-    def generate(self, prompt, model_name=MODEL_NAME):
+    def generate(self, prompt, model_name=Setting.MODEL_NAME):
         """使用 Ollama 模型生成文本"""
         response = ollama.generate(model=model_name, prompt=prompt)
         return response['response']
@@ -40,12 +35,12 @@ class GeminiModel(BaseModel):
 
     def __init__(self, api_key=None):
         """初始化 Gemini 模型，可選擇性設置 API 金鑰"""
-        self.api_key = api_key or os.getenv("GEMINI_API_KEY")
+        self.api_key = api_key or Setting.GEMINI_API_KEY
         genai.configure(api_key=self.api_key)
         # for model in genai.list_models():
         #     print(model)
 
-    def generate(self, prompt, model_name=MODEL_NAME):
+    def generate(self, prompt, model_name=Setting.MODEL_NAME):
         """使用 Gemini 模型生成文本"""
         try:
             model = genai.GenerativeModel(model_name)
@@ -59,7 +54,7 @@ class GeminiModel(BaseModel):
         except Exception as e:
             return f"生成錯誤: {str(e)}"
 
-    async def generate_async(self, prompt, model_name=MODEL_NAME):
+    async def generate_async(self, prompt, model_name=Setting.MODEL_NAME):
         """非同步使用 Gemini 模型生成文本"""
         try:
             model = genai.GenerativeModel(model_name)
@@ -90,4 +85,4 @@ class ModelFactory:
         else:
             raise ValueError(f"不支持的模型類型: {model_type}")
 
-model = ModelFactory.create_model(MODEL_TYPE)
+model = ModelFactory.create_model(Setting.MODEL_TYPE)

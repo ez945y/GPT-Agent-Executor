@@ -1,27 +1,23 @@
-import os
-from dotenv import load_dotenv
 from typing import List, Dict, Callable, Any
 from serpapi import GoogleSearch
+from utils.setting import Setting
 import re
 import json
-
-load_dotenv()
-serp_api_key = os.getenv("SERP_API_KEY")
 
 # 假設你已經安裝了 google-search-results 函式庫
 def web_search(query: str) -> str:
     """使用 Google 搜尋指定查詢"""
     try:
         if query and query != "":
-            search = GoogleSearch({"q": query, "api_key": serp_api_key})
+            search = GoogleSearch({"q": query, "api_key": Setting.SERP_API_KEY})
             results = search.get_dict()["organic_results"]
             if results and len(results) > 0:
                 first_result = results[0]
                 title = first_result.get("title", "無標題")
                 snippet = first_result.get("snippet", "無摘要")
                 # link = first_result.get("link", "#")
-                result = f"標題：{title}\n摘要：{snippet}"
-                print(f"搜尋了:{query}\n{result}")
+                result = f"標題： {title}\n摘要：{snippet}"
+                print(f"搜尋了: {query}\n{result}")
                 return result
             else:
                 return "找不到相關結果。"
@@ -32,14 +28,14 @@ def web_search(query: str) -> str:
 def express_as_sentence(sentence: str) -> str:
     """將一連串的想法轉化為一句話。"""
     if sentence and sentence != "":
-        print(f"AI:{sentence}")
-        return f"I say:{sentence}"
+        print(f"AI: {sentence}")
+        return f"I say: {sentence}"
     return None
  
 def observe_thought(target: str) -> str:
     """觀察自己的念頭，設定目標。"""
     if target and target != "":
-        print(f"AI設定目標：{target}")
+        print(f"AI設定了目標: {target}")
         return target
     return "想一下要做什麼。"
 
