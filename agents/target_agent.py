@@ -32,7 +32,7 @@ class TargetAgent(Agent):
 
                 if tool_info:
                     tool = target_tool[tool_info["tool_name"]]["func"]
-                    tool_output = tool(**tool_info['args'])
+                    tool_output = await tool(**tool_info['args'])
                     if tool_output:
                         await CachePool.add({"我決定": tool_output})
             await asyncio.sleep(60) # 2
