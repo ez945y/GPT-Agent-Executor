@@ -1,7 +1,8 @@
 import os
 import csv
 import datetime
-
+from server.chat_interface import ChatInterface
+import asyncio
 class Logger:
     def __init__(self, log_dir):
         self.log_dir = log_dir
@@ -37,6 +38,9 @@ class Logger:
 
             timestamp = datetime.datetime.now().isoformat()
             writer.writerow([timestamp, sequence, message])
+
+        if log_type != "tool":
+            await ChatInterface.send_conversation(filename.split("_log_")[1].replace(".csv", ''))
 
 # 建立 think, tool, chat 的 logger 物件
 think_logger = Logger("log/think")
