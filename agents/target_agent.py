@@ -4,7 +4,7 @@ from utils.llm_model import model
 from utils.templates import target_prompt_template
 from utils.tools import choose_tool, target_tool
 from utils.locks import agent_lock
-from utils.logger import tool_logger
+from utils.logger import Logger
 import asyncio
 
 class TargetAgent(Agent):
@@ -27,8 +27,8 @@ class TargetAgent(Agent):
                 response = model.generate(think_prompt_text)
                 tool_info = choose_tool(response)
 
-                await tool_logger.log("tool", sequence, think_prompt_text) 
-                await tool_logger.log("tool", sequence, response) 
+                await Logger.log("tool", sequence, think_prompt_text) 
+                await Logger.log("tool", sequence, response) 
 
                 if tool_info:
                     tool = target_tool[tool_info["tool_name"]]["func"]

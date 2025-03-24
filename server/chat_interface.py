@@ -2,15 +2,16 @@
 import os
 import csv
 import json
-
+import agents
+import asyncio
+from utils.timestamp import TimestampGenerator
+from utils.logger import Logger
 class ChatInterface():
     active_websockets = {}
     @classmethod
-    async def handel_message(cls, websocket, conversation_id, task, content):
+    async def handel_message(cls, websocket, uid, task, content):
         if task == "get_conversation":
-            if conversation_id not in cls.active_websockets:
-                cls.active_websockets[conversation_id] = websocket
-
+            conversation_id = content.get('conversation_id')
             # 發送 chat_logs 和 think_logs
             chat_logs = await cls.read_logs_from_file("chat", conversation_id)
             think_logs = await cls.read_logs_from_file("think", conversation_id)
@@ -19,6 +20,10 @@ class ChatInterface():
                 "chat_logs": chat_logs,
                 "think_logs": think_logs,
             })
+        elif task == "start_conversation":
+            await cls.start_conversation(uid)
+        elif task == "stop_conversation":
+            await cls.stop_conversation()
         
     @classmethod
     async def send_conversation(cls, conversation_id):
@@ -32,14 +37,41 @@ class ChatInterface():
             })
                 
     @classmethod
-    async def send_conversation_list(cls, conversation_id):
-        if conversation_id in cls.active_websockets:
+    async def send_conversation_list(cls, uid):
+        if uid in cls.active_websockets:
             conversation_list = cls.get_conversations()
-            await cls.active_websockets[conversation_id].send_json(json.dumps({
+            await cls.active_websockets[uid].send_json(json.dumps({
             "type": "log_list_update",
             "conversation_list": conversation_list
             }))
-                
+
+    @classmethod
+    async def start_conversation(cls, uid):
+        Logger.set_conversation(cls, uid)
+        await TimestampGenerator.generate_timestamp()
+
+        think_agent = agents.ThinkAgent()
+        tool_agent = agents.ToolAgent()
+        target_agent = agents.TargetAgent()
+
+        cls.agent_tasks = [
+            think_agent.start(),
+            tool_agent.start(),
+            target_agent.start(),
+        ]
+
+        await asyncio.gather(*cls.agent_tasks)  # 啟動 agent
+
+        await cls.send_conversation_list(uid)  # 通知前端要刷新 list
+
+    @classmethod
+    async def stop_conversation(cls):
+        if hasattr(cls, 'agent_tasks'):
+            for task in cls.agent_tasks:
+                if not task.done():
+                    task.cancel()
+            cls.agent_tasks = []
+   
     @staticmethod
     async def get_conversations():
         log_dir = "log/chat"

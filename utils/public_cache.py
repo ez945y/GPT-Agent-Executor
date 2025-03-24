@@ -2,7 +2,7 @@ import threading
 from collections import deque
 from typing import Any, Deque, List
 
-from utils.logger import think_logger, chat_logger
+from utils.logger import Logger
 
 class CachePool:
     """
@@ -24,7 +24,7 @@ class CachePool:
         with cls._lock:
             cls._pool.append(input)
 
-        await think_logger.log("think", len(cls._pool), input)
+        await Logger.log("think", len(cls._pool), input)
 
     @classmethod
     async def get_len(cls) -> int:

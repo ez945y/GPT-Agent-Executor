@@ -4,7 +4,7 @@ from utils.llm_model import model
 from utils.templates import decision_prompt_template
 from utils.tools import choose_tool, tools
 from utils.locks import agent_lock
-from utils.logger import tool_logger
+from utils.logger import Logger
 import asyncio
 
 class ToolAgent(Agent):
@@ -30,8 +30,8 @@ class ToolAgent(Agent):
                 response = model.generate(think_prompt_text)
                 tool_info = choose_tool(response)
 
-                await tool_logger.log("tool", sequence, think_prompt_text) 
-                await tool_logger.log("tool", sequence, response) 
+                await Logger.log("tool", sequence, think_prompt_text) 
+                await Logger.log("tool", sequence, response) 
                 
                 sequence += 1  # 序列號遞增
                 if tool_info:

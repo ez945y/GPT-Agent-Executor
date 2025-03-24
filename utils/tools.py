@@ -3,7 +3,7 @@ from serpapi import GoogleSearch
 from utils.setting import Setting
 import re
 import json
-from utils.logger import chat_logger
+from utils.logger import Logger
 from utils.public_cache import CachePool
 
 # 假設你已經安裝了 google-search-results 函式庫
@@ -19,8 +19,7 @@ async def web_search(query: str) -> str:
                 snippet = first_result.get("snippet", "無摘要")
                 # link = first_result.get("link", "#")
                 result = f"標題： {title}\n摘要：{snippet}"
-                await chat_logger.log("chat", await CachePool.get_len() + 1, f"搜尋了: {query}\n{result}")
-                chat_logger
+                await Logger.log("chat", await CachePool.get_len() + 1, f"搜尋了: {query}\n{result}")
                 return result
             else:
                 return "找不到相關結果。"
@@ -31,14 +30,14 @@ async def web_search(query: str) -> str:
 async def express_as_sentence(sentence: str) -> str:
     """將一連串的想法轉化為一句話。"""
     if sentence and sentence != "":
-        await chat_logger.log("chat", await CachePool.get_len() + 1, f"AI: {sentence}")
+        await Logger.log("chat", await CachePool.get_len() + 1, f"AI: {sentence}")
         return f"I say: {sentence}"
     return None
  
 async def observe_thought(target: str) -> str:
     """觀察自己的念頭，設定目標。"""
     if target and target != "":
-        await chat_logger.log("chat", await CachePool.get_len() + 1, f"AI設定了目標: {target}")
+        await Logger.log("chat", await CachePool.get_len() + 1, f"AI設定了目標: {target}")
         return target
     return "想一下要做什麼。"
 
