@@ -32,14 +32,14 @@ export default function ChatInput({ onSendMessage }: ChatInputProps) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="px-4 py-3 bg-gray-900 border-t flex gap-2">
+    <form onSubmit={handleSubmit} className="px-4 py-3 bg-white border-t flex gap-2">
       <input
         ref={inputRef}
         type="text"
         value={message}
         onChange={(e) => setMessage(e.target.value)}
         placeholder="Type your message here..."
-        className="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20"
+        className="flex-1 px-4 py-2 border border-gray-300 text-black rounded-lg focus:outline-none focus:border-primary focus:ring-2 focus:ring-primary focus:ring-opacity-20"
         disabled={isSending}
       />
       <button

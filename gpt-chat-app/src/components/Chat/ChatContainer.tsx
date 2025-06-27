@@ -9,37 +9,7 @@ interface ChatContainerProps {
 
 export default function ChatContainer({ messageLogs }: ChatContainerProps) {
   const [loading, setLoading] = useState(false);
-  const chatEndRef = useRef<HTMLDivElement>(null);
-
-  // useEffect(() => {
-  //   if (!conversationId) return;
-
-  //   const fetchMessages = async () => {
-  //     setLoading(true);
-  //     try {
-  //       const conversation = await getConversation(conversationId);
-  //       setMessages(conversation.messages || []);
-  //     } catch (error) {
-  //       console.error('Error fetching messages:', error);
-  //     } finally {
-  //       setLoading(false);
-  //     }
-  //   };
-
-  //   fetchMessages();
-
-  //   // Set up polling for new messages
-  //   const interval = setInterval(async () => {
-  //     try {
-  //       const logs = await getChatLogs(conversationId);
-  //       // Process logs if needed
-  //     } catch (error) {
-  //       console.error('Error polling chat logs:', error);
-  //     }
-  //   }, 3000);
-
-  //   return () => clearInterval(interval);
-  // }, [conversationId]);
+  const chatEndRef = useRef<HTMLDivElement>(null)
 
   // Scroll to bottom when messages change
   useEffect(() => {
@@ -48,7 +18,7 @@ export default function ChatContainer({ messageLogs }: ChatContainerProps) {
 
   if (!messageLogs) {
     return (
-      <div className="flex-3 flex items-center justify-center bg-gray-900 text-white">
+      <div className="flex-3 flex items-center justify-center bg-gray-100 text-gray-800">
         Select or create a conversation to start chatting
       </div>
     );
@@ -63,9 +33,9 @@ export default function ChatContainer({ messageLogs }: ChatContainerProps) {
   }
 
   return (
-    <div className="flex-3 overflow-y-auto p-4 bg-gray-900" id="chat-container">
+    <div className="flex-3 overflow-y-auto p-4 bg-white" id="chat-container">
       {messageLogs.length === 0 ? (
-        <div className="flex items-center justify-center h-full bg-gray-900 text-gray-500">
+        <div className="flex items-center justify-center h-full bg-gray-50 text-gray-500">
           No messages yet. Start by sending a message.
         </div>
       ) : (

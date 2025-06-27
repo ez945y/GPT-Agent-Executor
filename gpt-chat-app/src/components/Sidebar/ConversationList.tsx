@@ -11,7 +11,7 @@ interface ConversationListProps {
 export default function ConversationList({ conversations, currentId, onSelect }: ConversationListProps) {
   if (conversations.length === 0) {
     return (
-      <div className="py-4 text-center text-white text-opacity-70">
+      <div className="py-4 text-center text-black text-opacity-70">
         No conversations yet
       </div>
     );
@@ -29,7 +29,7 @@ export default function ConversationList({ conversations, currentId, onSelect }:
             onClick={() => onSelect(conversation.id)}
             className={`
               p-3 rounded-lg cursor-pointer flex items-center
-              ${isActive ? 'bg-yellow-500 text-white font-medium' : 'bg-transparent text-white hover:bg-white hover:bg-opacity-10'}
+              ${isActive ? 'bg-yellow-500 text-white font-medium' : 'bg-transparent text-black hover:bg-white hover:bg-opacity-10'}
               transition-colors
             `}
           >

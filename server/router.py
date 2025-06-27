@@ -31,7 +31,7 @@ async def websocket_endpoint(websocket: WebSocket):
 
     except WebSocketDisconnect:
         await ChatInterface.stop_conversation()
-        if ChatInterface.conversation_id and websocket in ChatInterface.active_websockets.get(uid, None):
+        if  websocket in ChatInterface.active_websockets.get(uid, None):
             del ChatInterface.active_websockets[uid]
 
 @router.get("/api/conversations")

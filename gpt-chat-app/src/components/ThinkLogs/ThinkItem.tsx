@@ -14,7 +14,7 @@ export default function ThinkItem({ log }: ThinkItemProps) {
 
 
   return (
-  <div className="mb-3 p-4 rounded-lg shadow-md bg-white border border-gray-200">
+  <div className="mb-3 p-4 rounded-lg shadow-md bg-gray-100 border border-gray-200">
     <div className="text-sm font-medium text-gray-800">{log.message}</div>
     <div className="text-xs text-gray-600 mt-2">
       {formattedTime}

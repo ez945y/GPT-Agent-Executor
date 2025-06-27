@@ -37,7 +37,7 @@ export default function ThinkContainer({ conversationLogs, isThinking }: ThinkCo
   }
 
   return (
-    <div ref={containerRef} className="flex-2 overflow-y-auto p-4 bg-gray-900">
+    <div ref={containerRef} className="flex-2 overflow-y-auto p-4">
       {conversationLogs.length === 0 ? (
         <div className="flex items-center justify-center h-full text-gray-500">
           No thinking logs available

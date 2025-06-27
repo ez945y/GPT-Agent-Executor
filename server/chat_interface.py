@@ -47,7 +47,7 @@ class ChatInterface():
 
     @classmethod
     async def start_conversation(cls, uid):
-        Logger.set_conversation(cls, uid)
+        await Logger.set_conversation(cls, uid)
         await TimestampGenerator.generate_timestamp()
 
         think_agent = agents.ThinkAgent()
@@ -68,8 +68,7 @@ class ChatInterface():
     async def stop_conversation(cls):
         if hasattr(cls, 'agent_tasks'):
             for task in cls.agent_tasks:
-                if not task.done():
-                    task.cancel()
+                task.cancel()
             cls.agent_tasks = []
    
     @staticmethod
