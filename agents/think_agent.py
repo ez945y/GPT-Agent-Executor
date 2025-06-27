@@ -15,7 +15,7 @@ class ThinkAgent(Agent):
             # prompt_text = self.prompt.format()
             # response = model.generate(prompt_text, self.model_name)
             # await CachePool.add({"你將扮演": prompt_text})
-            # await CachePool.add({"我": response})
+            await CachePool.add({"我": "我肚子餓了，想吃飯，要吃什麼"})
             self.set_prompt(think_prompt_template)
         await self.step()
         
