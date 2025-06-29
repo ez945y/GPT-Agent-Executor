@@ -2,8 +2,6 @@ import threading
 from collections import deque
 from typing import Any, Deque, List
 
-from utils.logger import Logger
-
 class CachePool:
     """
     快取池類別，用於儲存和管理快取資料。
@@ -24,7 +22,20 @@ class CachePool:
         with cls._lock:
             cls._pool.append(input)
 
+        # 動態導入 Logger 避免循環依賴
+        from utils.logger import Logger
         await Logger.log("think", len(cls._pool), input)
+
+    @classmethod
+    async def add_think(cls, input: Any) -> None:
+        """
+        向快取池中新增一個 think 元素（不觸發 Logger.log）。
+
+        Args:
+            input (Any): 要新增的 think 元素。
+        """
+        with cls._lock:
+            cls._pool.append(input)
 
     @classmethod
     async def get_len(cls) -> int:
@@ -52,6 +63,17 @@ class CachePool:
             items: List[Any] = list(cls._pool)[-length:]
             # 將列表中的每個元素轉換為字串，並連接起來
             return ", ".join(map(str, items))  # 將 list 轉成字串
+
+    @classmethod
+    async def get_all(cls) -> List[Any]:
+        """
+        獲取快取池中的所有元素。
+
+        Returns:
+            List[Any]: 快取池中的所有元素列表。
+        """
+        with cls._lock:
+            return list(cls._pool)
 
     @classmethod
     def get_target(cls) -> str:

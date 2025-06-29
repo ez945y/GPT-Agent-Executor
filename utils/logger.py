@@ -3,6 +3,7 @@ import csv
 import datetime
 import asyncio
 from utils.timestamp import TimestampGenerator
+from utils.public_cache import CachePool
 
 class Logger:
     _instance = None
@@ -24,17 +25,23 @@ class Logger:
     async def log(cls, log_type, sequence, message):
         async with cls._lock:
             if log_type == "think":
-                filename = os.path.join(cls.log_dir, f"think_log_{TimestampGenerator.get_timestamp()}.csv")
+                subdir = "think"
             elif log_type == "tool":
-                filename = os.path.join(cls.log_dir, f"tool_log_{TimestampGenerator.get_timestamp()}.csv")
+                subdir = "tool"
             elif log_type == "chat":
-                filename = os.path.join(cls.log_dir, f"chat_log_{TimestampGenerator.get_timestamp()}.csv")
-                print(message)
+                subdir = "chat"
             else:
                 raise ValueError("log_type must be 'think', 'tool' or 'chat'")
 
-            if filename is None:
-                raise ValueError("Conversation ID must be set before logging.")
+            # 產生正確的路徑
+            log_dir = os.path.join(cls.log_dir, subdir)
+            os.makedirs(log_dir, exist_ok=True)
+            filename = os.path.join(log_dir, f"{log_type}_log_{TimestampGenerator.get_timestamp()}.csv")
+
+            if log_type == "think":
+                await CachePool.add_think({"思考": message})
+            elif log_type == "chat":
+                print(message)
 
             file_exists = os.path.isfile(filename)
             with open(filename, "a", newline="", encoding="utf-8") as csvfile:

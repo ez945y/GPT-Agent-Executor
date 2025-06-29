@@ -12,6 +12,7 @@ class TargetAgent(Agent):
 
     async def start(self):
         """啟動工具代理"""
+        await super().start()
         self.set_prompt(target_prompt_template)
         await asyncio.sleep(2)
         await self.step()
@@ -19,23 +20,34 @@ class TargetAgent(Agent):
     async def step(self):
         """執行工具代理步驟"""
         sequence = 1  # 初始化序列號
-        while True:
-            with agent_lock:
-                self.prompt.set_variable("cache_pool", CachePool.get())
-                self.prompt.set_variable("current_target", CachePool.get_target())
-                think_prompt_text = self.prompt.format()
-                response = model.generate(think_prompt_text)
-                tool_info = choose_tool(response)
+        try:
+            while self.running:
+                with agent_lock:
+                    self.prompt.set_variable("cache_pool", CachePool.get())
+                    self.prompt.set_variable("current_target", CachePool.get_target())
+                    think_prompt_text = self.prompt.format()
+                    response = model.generate(think_prompt_text)
+                    tool_info = choose_tool(response)
 
-                await Logger.log("tool", sequence, think_prompt_text) 
-                await Logger.log("tool", sequence, response) 
+                    await Logger.log("tool", sequence, think_prompt_text) 
+                    await Logger.log("tool", sequence, response) 
 
-                if tool_info:
-                    tool = target_tool[tool_info["tool_name"]]["func"]
-                    tool_output = await tool(**tool_info['args'])
-                    if tool_output:
-                        await CachePool.add({"我決定": tool_output})
-            await asyncio.sleep(60) # 2
+                    if tool_info:
+                        tool = target_tool[tool_info["tool_name"]]["func"]
+                        tool_output = await tool(**tool_info['args'])
+                        if tool_output:
+                            await CachePool.add({"我決定": tool_output})
+                
+                # 檢查是否應該停止
+                if not self.running:
+                    break
+                    
+                await asyncio.sleep(60) # 2
+        except Exception as e:
+            print(f"❌ TargetAgent 錯誤: {e}")
+        finally:
+            print("🛑 TargetAgent 已停止")
+            self.running = False
 
     def _format_tool_list(self) -> str:
         """格式化工具清單為字串"""

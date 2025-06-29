@@ -55,7 +55,7 @@ const createWebSocket = (): Promise<WebSocket> => {
 const getWebSocket = async (): Promise<WebSocket> => {
   if (globalSocket && globalSocket.readyState === WebSocket.OPEN) {
     return globalSocket;
-  }
+    }
   return createWebSocket();
 };
 
@@ -91,8 +91,8 @@ export const SocketProvider = ({ children }: { children: React.ReactNode }) => {
     try {
       const socket = await getWebSocket();
       if (socket.readyState === WebSocket.OPEN) {
-        socket.send(message);
-      } else {
+      socket.send(message);
+    } else {
         console.error('WebSocket is not open');
       }
     } catch (error) {
@@ -133,16 +133,16 @@ export const useSocket = (
           if (!mounted) return;
           
           try {
-            const data = JSON.parse(event.data);
-            if (data.type === 'logs_update') {
-              console.log(data.chat_logs);
-              console.log(data.think_logs);
+        const data = JSON.parse(event.data);
+        if (data.type === 'logs_update') {
+          console.log(data.chat_logs);
+          console.log(data.think_logs);
               stableSetConversationLogs(data.think_logs);
               stableSetMessageLogs(data.chat_logs);
-            }
-            if (data.type === 'log_list_updates_update') {
+        }
+        if (data.type === 'log_list_updates_update') {
               stableSetConversations(data.conversation_list)
-            }
+        }
           } catch (error) {
             console.error('Error parsing WebSocket message:', error);
           }

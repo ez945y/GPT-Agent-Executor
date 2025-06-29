@@ -1,4 +1,3 @@
-
 import os
 import csv
 import json
@@ -6,8 +5,12 @@ import agents
 import asyncio
 from utils.timestamp import TimestampGenerator
 from utils.logger import Logger
+import websockets
+
 class ChatInterface():
     active_websockets = {}
+    agent_instances = []  # 保存 agent 實例的引用
+    
     @classmethod
     async def handel_message(cls, websocket, uid, task, content):
         if task == "get_conversation":
@@ -27,14 +30,53 @@ class ChatInterface():
         
     @classmethod
     async def send_conversation(cls, conversation_id):
+        print(f"📤 發送對話更新: {conversation_id}")
+        
         if conversation_id in cls.active_websockets:
-                chat_logs = await cls.read_latest_logs("chat")
-                think_logs = await cls.read_latest_logs("think")
-                await cls.active_websockets[conversation_id].send_json({
-                "type": "logs_update",
-                "chat_logs": chat_logs,
-                "think_logs": think_logs,
-            })
+                try:
+                    chat_logs = await cls.read_latest_logs("chat")
+                    think_logs = await cls.read_latest_logs("think")
+                    await cls.active_websockets[conversation_id].send_json({
+                    "type": "logs_update",
+                    "chat_logs": chat_logs,
+                    "think_logs": think_logs,
+                })
+                    print(f"✅ 已向 WebSocket {conversation_id} 發送更新")
+                except Exception as e:
+                    print(f"❌ 向 WebSocket {conversation_id} 發送更新失敗: {e}")
+                    # 移除斷開的 WebSocket
+                    del cls.active_websockets[conversation_id]
+        
+        # 同時向 CLI WebSocket 發送更新（動態導入避免循環依賴）
+        try:
+            from server.cli_router import cli_websocket
+            from starlette.websockets import WebSocketState
+            if cli_websocket and getattr(cli_websocket, 'application_state', None) == WebSocketState.CONNECTED:
+                try:
+                    chat_logs = await cls.read_latest_logs("chat")
+                    think_logs = await cls.read_latest_logs("think")
+                    await cli_websocket.send_json({
+                        "type": "logs_update",
+                        "chat_logs": chat_logs,
+                        "think_logs": think_logs,
+                    })
+                    print("✅ 已向 CLI WebSocket 發送更新")
+                except Exception as e:
+                    print(f"❌ 向 CLI WebSocket 發送更新失敗: {e}")
+                    # 發送失敗時自動清理 cli_websocket
+                    from server import cli_router
+                    cli_router.cli_websocket = None
+                    # 如果是 keepalive ping timeout 或 1011 internal error 也清理
+                    if '1011' in str(e) or 'ping timeout' in str(e):
+                        print("⚠️ 檢測到 keepalive ping timeout 或 1011 internal error，自動清理 cli_websocket")
+                        cli_router.cli_websocket = None
+            else:
+                print("⚠️ CLI WebSocket 未連接或未 accept")
+        except ImportError:
+            # CLI router 可能還沒有加載
+            pass
+        except Exception as e:
+            print(f"❌ 獲取 CLI WebSocket 失敗: {e}")
                 
     @classmethod
     async def send_conversation_list(cls, uid):
@@ -54,22 +96,72 @@ class ChatInterface():
         tool_agent = agents.ToolAgent()
         target_agent = agents.TargetAgent()
 
+        # 保存 agent 實例的引用
+        cls.agent_instances = [think_agent, tool_agent, target_agent]
+
+        # 創建 agent 任務
         cls.agent_tasks = [
             think_agent.start(),
             tool_agent.start(),
             target_agent.start(),
         ]
 
-        await asyncio.gather(*cls.agent_tasks)  # 啟動 agent
+        # 在後台啟動 agents，不阻塞主線程
+        async def run_agents():
+            try:
+                print("🚀 開始運行 agents...")
+                await asyncio.gather(*cls.agent_tasks)
+                print("✅ Agents 運行完成")
+            except asyncio.CancelledError:
+                print("🛑 Agents 任務被取消")
+            except Exception as e:
+                print(f"❌ Agent 運行錯誤: {e}")
+
+        # 創建後台任務
+        cls.agent_background_task = asyncio.create_task(run_agents())
 
         await cls.send_conversation_list(uid)  # 通知前端要刷新 list
 
     @classmethod
     async def stop_conversation(cls):
+        """停止當前對話"""
+        print("🛑 開始停止對話...")
+        
+        # 停止所有 agents
+        for agent in cls.agent_instances:
+            if hasattr(agent, 'stop'):
+                try:
+                    print(f"🛑 停止 agent: {type(agent).__name__}")
+                    agent.stop()
+                except Exception as e:
+                    print(f"⚠️ 停止 agent {type(agent).__name__} 時發生錯誤: {e}")
+        
+        # 取消後台任務
+        if hasattr(cls, 'agent_background_task') and cls.agent_background_task:
+            try:
+                print("🛑 取消後台 agent 任務...")
+                cls.agent_background_task.cancel()
+                # 等待任務取消完成
+                try:
+                    await cls.agent_background_task
+                except asyncio.CancelledError:
+                    print("✅ 後台 agent 任務已取消")
+            except Exception as e:
+                print(f"⚠️ 取消後台任務時發生錯誤: {e}")
+        
+        # 等待一下讓 agents 有時間停止
+        await asyncio.sleep(1)
+        
+        # 清空 agent 實例列表
+        cls.agent_instances = []
+        
+        # 清空任務引用
         if hasattr(cls, 'agent_tasks'):
-            for task in cls.agent_tasks:
-                task.cancel()
             cls.agent_tasks = []
+        if hasattr(cls, 'agent_background_task'):
+            cls.agent_background_task = None
+        
+        print("✅ 對話已停止")
    
     @staticmethod
     async def get_conversations():
@@ -95,58 +187,54 @@ class ChatInterface():
             return conversations
         except Exception as e:
             print(e)
-        
-    @staticmethod 
-    async def read_latest_logs(log_type):
+            return []
+
+    @staticmethod
+    async def read_logs_from_file(log_type: str, conversation_id: str):
         log_dir = f"log/{log_type}"
         try:
             files = [f for f in os.listdir(log_dir) if f.endswith('.csv')]
+            
             if not files:
                 return []
-            
-            latest_file = sorted(files)[-1]  # Get the most recent file
+
             logs = []
-            
-            with open(os.path.join(log_dir, latest_file), 'r', encoding='utf-8') as f:
-                import csv
-                reader = csv.DictReader(f)
-                logs = [{"timestamp": row["timestamp"], "sequence": row["sequence"], "message": row["message"]} 
-                    for row in reader]
-            
-            # Return the last 20 logs
-            return logs[-20:] if len(logs) > 20 else logs
-        
+            for file in files:
+                with open(os.path.join(log_dir, file), 'r', encoding='utf-8') as f:
+                    reader = csv.DictReader(f)
+                    for row in reader:
+                        logs.append({
+                            "timestamp": row["timestamp"],
+                            "message": row["message"]
+                        })
+
+            return logs
         except Exception as e:
-            print(f"Error reading logs: {e}")
+            print(e)
             return []
 
-    @staticmethod   
-    async def read_logs_from_file(log_type, filename):
-        """
-        Reads logs from a specified file.
-
-        Args:
-            log_type (str): The type of log (used for directory).
-            filename (str): The name of the log file.
-
-        Returns:
-            list: A list of log dictionaries, or an empty list if an error occurs.
-        """
+    @staticmethod
+    async def read_latest_logs(log_type: str):
         log_dir = f"log/{log_type}"
-        log_path = os.path.join(log_dir, log_type + "_log_"+filename + ".csv")
-
         try:
+            files = [f for f in os.listdir(log_dir) if f.endswith('.csv')]
+            
+            if not files:
+                return []
+
+            # 獲取最新的文件
+            latest_file = sorted(files)[-1]
+            
             logs = []
-            with open(log_path, 'r', encoding='utf-8') as f:
+            with open(os.path.join(log_dir, latest_file), 'r', encoding='utf-8') as f:
                 reader = csv.DictReader(f)
-                logs = [{"timestamp": row["timestamp"], "sequence": row["sequence"], "message": row["message"]} for row in reader]
+                for row in reader:
+                    logs.append({
+                        "timestamp": row["timestamp"],
+                        "message": row["message"]
+                    })
 
-            # Return the last 20 logs
-            return logs[-20:] if len(logs) > 20 else logs
-
-        except FileNotFoundError:
-            print(f"Error: File '{filename}' not found in '{log_dir}'.")
-            return []
+            return logs
         except Exception as e:
-            print(f"Error reading logs from '{filename}': {e}")
+            print(e)
             return []

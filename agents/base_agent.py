@@ -18,6 +18,7 @@ class Agent:
         self.model_name: Optional[str] = model_name  # 模型名稱
         self.prompt: Optional[Prompt] = None  # 提示物件
         self.history: List[dict] = []  # 歷史記錄（快取池）
+        self.running: bool = False  # 運行狀態
 
     def set_model(self, model_name: str):
         """
@@ -37,12 +38,21 @@ class Agent:
         """
         self.prompt = Prompt(template)
 
+    def stop(self):
+        """
+        停止代理
+
+        設置停止標誌，讓代理在下一次循環時退出。
+        """
+        self.running = False
+
     async def start(self):
         """
         啟動代理
 
         此方法在代理啟動時被呼叫，用於執行初始化操作。
         """
+        self.running = True
         pass
 
     async def step(self):
