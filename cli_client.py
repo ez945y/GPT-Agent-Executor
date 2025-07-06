@@ -9,6 +9,7 @@ import json
 import argparse
 import aioconsole
 import sys
+import signal
 from typing import Optional
 
 WS_URL = "ws://127.0.0.1:8000/cli/ws"
@@ -27,6 +28,12 @@ class WebSocketChatClient:
         self.connection_lock = asyncio.Lock()
         self.reconnect_attempts = 0
         self.max_reconnect_attempts = 3
+        self.shutdown_event = asyncio.Event()
+        
+    def signal_handler(self, signum, frame):
+        """信號處理器"""
+        print(f"\n🛑 收到信號 {signum}，正在關閉...")
+        self.shutdown_event.set()
         
     async def async_print(self, *args, **kwargs):
         """異步安全的打印函數"""
@@ -360,6 +367,10 @@ class WebSocketChatClient:
 
     async def run(self):
         """運行主程序"""
+        # 註冊信號處理器
+        signal.signal(signal.SIGINT, self.signal_handler)
+        signal.signal(signal.SIGTERM, self.signal_handler)
+        
         mode = "詳細模式 (💭 think)" if self.verbose else "預設模式 (💬 chat)"
         await self.async_print(f"🎯 WebSocket CLI 聊天客戶端 - {mode}")
         await self.async_print("輸入 'help' 查看所有指令")
@@ -377,7 +388,7 @@ class WebSocketChatClient:
         await asyncio.sleep(0.1)
         
         try:
-            while True:
+            while not self.shutdown_event.is_set():
                 # 檢查連接狀態
                 if not self.connected:
                     await self.async_print("❌ 連接已斷開，嘗試重新連接...")
@@ -394,10 +405,18 @@ class WebSocketChatClient:
                 status = "🟢" if self.is_running else "🔴"
                 connection_status = "🔗" if self.connected else "❌"
                 
-                # 使用非阻塞輸入
+                # 使用非阻塞輸入，帶超時檢查
                 try:
-                    user_input = await aioconsole.ainput(f"{status}{connection_status} > ")
+                    user_input = await asyncio.wait_for(
+                        aioconsole.ainput(f"{status}{connection_status} > "),
+                        timeout=1.0
+                    )
                     user_input = user_input.strip()
+                except asyncio.TimeoutError:
+                    # 超時時檢查是否需要關閉
+                    if self.shutdown_event.is_set():
+                        break
+                    continue
                 except (EOFError, KeyboardInterrupt):
                     await self.async_print("\n🛑 收到中斷信號")
                     break
@@ -457,6 +476,7 @@ class WebSocketChatClient:
         except Exception as e:
             await self.async_print(f"❌ 運行時錯誤: {e}")
         finally:
+            # 清理資源
             if self.is_running:
                 await self.stop_conversation()
             await self.disconnect()
@@ -475,38 +495,53 @@ async def main():
     
     client = WebSocketChatClient(verbose=args.verbose)
     
-    if args.command:
-        # 命令行模式
-        if not await client.connect():
-            return
+    try:
+        if args.command:
+            # 命令行模式
+            if not await client.connect():
+                return
+                
+            command = args.command.lower()
             
-        command = args.command.lower()
-        
-        if command == "start":
-            await client.start_conversation(initial_task=args.task)
-        elif command == "send" and args.args:
-            message = " ".join(args.args)
-            await client.send_user_message(message)
-        elif command == "list":
-            await client.get_conversations()
-        elif command == "conv" and args.args:
-            await client.get_conversation(args.args[0])
-        elif command == "cache":
-            await client.get_cache_pool()
-        elif command == "status":
-            await client.get_status()
-        elif command == "stop":
-            await client.stop_conversation()
+            if command == "start":
+                await client.start_conversation(initial_task=args.task)
+            elif command == "send" and args.args:
+                message = " ".join(args.args)
+                await client.send_user_message(message)
+            elif command == "list":
+                await client.get_conversations()
+            elif command == "conv" and args.args:
+                await client.get_conversation(args.args[0])
+            elif command == "cache":
+                await client.get_cache_pool()
+            elif command == "status":
+                await client.get_status()
+            elif command == "stop":
+                await client.stop_conversation()
+            else:
+                print("用法: python cli_client.py <command> [args]")
+                print("命令: start [--task <任務>], send <msg>, list, conv <id>, cache, status, stop")
+                print("選項: --task, -t: 設置初始任務")
+                print("選項: --verbose, -v: 詳細模式，顯示 think 訊息")
+            
+            await client.disconnect()
         else:
-            print("用法: python cli_client.py <command> [args]")
-            print("命令: start [--task <任務>], send <msg>, list, conv <id>, cache, status, stop")
-            print("選項: --task, -t: 設置初始任務")
-            print("選項: --verbose, -v: 詳細模式，顯示 think 訊息")
-        
-        await client.disconnect()
-    else:
-        # 互動模式
-        await client.run()
+            # 互動模式
+            await client.run()
+    except KeyboardInterrupt:
+        print("\n🛑 程序被中斷")
+    except Exception as e:
+        print(f"❌ 程序錯誤: {e}")
+    finally:
+        # 確保清理
+        if client.connected:
+            await client.disconnect()
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    try:
+        asyncio.run(main())
+    except KeyboardInterrupt:
+        print("\n🛑 程序退出")
+    except Exception as e:
+        print(f"❌ 程序錯誤: {e}")
+        sys.exit(1)
