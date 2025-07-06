@@ -10,10 +10,14 @@ import asyncio
 class ToolAgent(Agent):
     """工具代理，根據快取池內容選擇工具"""
 
-    async def start(self):
+    async def start(self, init_target):
         """啟動工具代理"""
         await super().start()
         self.set_prompt(decision_prompt_template)
+
+        if init_target is None:
+            init_target = "我肚子餓了，想吃飯，要吃什麼"
+        self.prompt.set_variable("current_target", init_target)
 
         tool_list_str = self._format_tool_list()
         self.prompt.set_variable("tool_list", tool_list_str)
@@ -27,7 +31,7 @@ class ToolAgent(Agent):
             while self.running:
                 with agent_lock:
                     self.prompt.set_variable("cache_pool", CachePool.get())
-                    self.prompt.set_variable("current_target", CachePool.get_target())
+                    self.prompt.set_variable("check_list", CachePool.get_check_list())
                     think_prompt_text = self.prompt.format()
                     response = model.generate(think_prompt_text)
                     tool_info = choose_tool(response)

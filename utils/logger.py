@@ -25,10 +25,12 @@ class Logger:
     async def log(cls, log_type, sequence, message):
         async with cls._lock:
             if log_type == "think":
+                # 給AI看的log, 包含think輸出, 自然語言輸出跟網路搜尋
                 subdir = "think"
             elif log_type == "tool":
                 subdir = "tool"
             elif log_type == "chat":
+                # 給人看的log, 只有自然語言輸出跟網路搜尋
                 subdir = "chat"
             else:
                 raise ValueError("log_type must be 'think', 'tool' or 'chat'")

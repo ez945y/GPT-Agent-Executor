@@ -34,11 +34,11 @@ async def express_as_sentence(sentence: str) -> str:
         return f"I say: {sentence}"
     return None
  
-async def observe_thought(target: str) -> str:
-    """觀察自己的念頭，設定目標。"""
-    if target and target != "":
-        await Logger.log("chat", await CachePool.get_len() + 1, f"AI設定了目標: {target}")
-        return target
+async def observe_thought(check_list: str) -> str:
+    """觀察自己的念頭，設定目標清單。"""
+    if check_list and check_list != "":
+        await Logger.log("chat", await CachePool.get_len() + 1, f"AI設定了目標: {check_list}")
+        return check_list
     return "想一下要做什麼。"
 
 # 工具清單
@@ -57,10 +57,10 @@ tools: Dict[str, Dict[str, Any]] = {
 }
 
 target_tool: Dict[str, Dict[str, Any]] = {
-    "設定目標": {
+    "更新檢查清單": {
         "func": observe_thought,
-        "args": "target:string",
-        "description": "觀察自己的念頭，決定是否要修改或設定目標。"
+        "args": "check_list:string",
+        "description": "觀察自己的念頭，決定是否要修改或設定目標清單。"
     },
 }
 
@@ -90,9 +90,9 @@ def choose_tool(model_output: str) -> Dict[str, Any]:
             # print(output_json.get("sentence"))
             return {"tool_name": "自然表達", "args": {"sentence": output_json.get("sentence")}}
         
-        elif re.search(r"設定目標|設定|目標", model_output, re.IGNORECASE):
+        elif re.search(r"更新檢查清單|更新|檢查清單", model_output, re.IGNORECASE):
             # print(output_json.get("sentence"))
-            return {"tool_name": "設定目標", "args": {"target": output_json.get("target")}}
+            return {"tool_name": "更新檢查清單", "args": {"check_list": output_json.get("check_list")}}
         # 添加其他工具的選擇邏輯...
         return None
     except ValueError:

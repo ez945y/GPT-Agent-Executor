@@ -8,7 +8,7 @@ import asyncio
 class ThinkAgent(Agent):
     """思考代理"""
 
-    async def start(self, initial_task: str = None):
+    async def start(self):
         """啟動思考代理"""
         await super().start()
         with agent_lock:
@@ -16,10 +16,6 @@ class ThinkAgent(Agent):
             # prompt_text = self.prompt.format()
             # response = model.generate(prompt_text, self.model_name)
             # await CachePool.add({"你將扮演": prompt_text})
-            
-            default_task = "我肚子餓了，想吃飯，要吃什麼"
-            task_to_use = initial_task if initial_task else default_task
-            await CachePool.add({"我": task_to_use})
             
             self.set_prompt(think_prompt_template)
         await self.step()

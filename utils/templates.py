@@ -36,8 +36,11 @@ personlitity_prompt_template = """
 """
 
 decision_prompt_template = """
-* 你當前的目標是
+* 你的終極目標是
 - {current_target}
+
+* 當前檢查清單：
+- {check_list}
 
 * 你能夠使用這些工具
 {tool_list}
@@ -62,19 +65,42 @@ target_prompt_template = """
 * 你當前的目標是
 - {current_target}
 
-* 若還沒有目標的情況下，先設定目標
-* 若己經有目標了，先觀察目前cache_pool是否符合目標，若已經符合那就不用再修改目標了
+* 你的任務是根據當前目標和cache_pool內容來管理check_list
+* 分析cache_pool中的內容，判斷是否已經滿足當前目標
+* 如果目標已完成，標記為完成狀態
+* 如果目標未完成，根據目標分解出需要完成的檢查項目，添加到check_list中
+* 不要修改current_target，只能管理check_list
+
+* 輸出規則：
 * 不要包含任何解釋、描述或額外資訊，根據工具和參數只輸出JSON本身，不用標註這是json。
-* 如果需要，請輸出以下格式的 JSON：
+* 如果需要添加檢查項目，請輸出以下格式的 JSON：
 {{
-  "tool_name": "設定目標",
+  "tool_name": "更新檢查清單",
   "args": {{
-    "target": "目標",
-    ...
+    "check_list": [
+      {{
+        "item": "檢查項目描述",
+        "status": "pending"
+      }},
+      {{
+        "item": "另一個檢查項目",
+        "status": "completed"
+      }}
+    ]
   }}
 }}
-* 如果不需要，請輸出 ""。
+* 如果目標已完成，請輸出：
+{{
+  "tool_name": "標記目標完成",
+  "args": {{
+    "status": "completed"
+  }}
+}}
+* 如果不需要任何操作，請輸出 ""。
 
-cache_pool
+* 當前檢查清單：
+{check_list}
+
+* 當前緩存池內容：
 {cache_pool}
 """

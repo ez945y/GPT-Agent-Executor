@@ -1,6 +1,6 @@
 import threading
 from collections import deque
-from typing import Any, Deque, List
+from typing import Any, Deque, List, Dict
 
 class CachePool:
     """
@@ -10,6 +10,7 @@ class CachePool:
     _pool: Deque[Any] = deque(maxlen=25)  # 快取池，最大長度為 25
     _lock: threading.Lock = threading.Lock()  # 線程鎖，用於保證線程安全
     _current_target: str = "目前還沒有目標"  # 當前目標，預設為 "目前還沒有目標"
+    _check_list: List[Dict[str, str]] = []  # 檢查清單，格式: [{"item": "描述", "status": "pending/completed"}]
 
     @classmethod
     async def add(cls, input: Any) -> None:
@@ -84,3 +85,25 @@ class CachePool:
             str: 當前目標。
         """
         return cls._current_target
+
+    @classmethod
+    def get_check_list(cls) -> List[Dict[str, str]]:
+        """
+        獲取當前檢查清單。
+
+        Returns:
+            List[Dict[str, str]]: 當前檢查清單，格式為 [{"item": "描述", "status": "pending/completed"}]
+        """
+        with cls._lock:
+            return cls._check_list.copy()
+
+    @classmethod
+    def set_check_list(cls, check_list: List[Dict[str, str]]) -> None:
+        """
+        設置檢查清單。
+
+        Args:
+            check_list (List[Dict[str, str]]): 新的檢查清單，格式為 [{"item": "描述", "status": "pending/completed"}]
+        """
+        with cls._lock:
+            cls._check_list = check_list.copy()

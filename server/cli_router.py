@@ -136,9 +136,9 @@ async def start_cli_conversation(websocket, uid, initial_task: str = None):
 
         # 創建 agent 任務
         agent_tasks = [
-            think_agent.start(initial_task=initial_task),
-            tool_agent.start(),
-            target_agent.start(),
+            think_agent.start(),
+            tool_agent.start(init_target=initial_task),
+            target_agent.start(init_target=initial_task),
         ]
 
         # 在後台啟動 agents，不阻塞 WebSocket 響應

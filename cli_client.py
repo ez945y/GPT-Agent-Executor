@@ -401,14 +401,10 @@ class WebSocketChatClient:
                         await self.async_print("❌ 重新連接失敗，退出程序")
                         break
                 
-                # 顯示提示符
-                status = "🟢" if self.is_running else "🔴"
-                connection_status = "🔗" if self.connected else "❌"
-                
                 # 使用非阻塞輸入，帶超時檢查
                 try:
                     user_input = await asyncio.wait_for(
-                        aioconsole.ainput(f"{status}{connection_status} > "),
+                        aioconsole.ainput(f""),
                         timeout=1.0
                     )
                     user_input = user_input.strip()
