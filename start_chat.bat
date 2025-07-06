@@ -15,19 +15,19 @@ if %errorlevel% neq 0 (
 
 echo ✅ Python 已安裝
 
-REM 檢查 requests 模組
-python -c "import requests" >nul 2>&1
+REM 檢查 websockets 模組
+python -c "import websockets" >nul 2>&1
 if %errorlevel% neq 0 (
-    echo 📦 安裝 requests 模組...
-    python -m pip install requests --user
+    echo 📦 安裝 websockets 模組...
+    python -m pip install websockets --user
     if %errorlevel% neq 0 (
-        echo ❌ 安裝 requests 失敗
+        echo ❌ 安裝 websockets 失敗
         pause
         exit /b 1
     )
 )
 
-echo ✅ requests 模組已安裝
+echo ✅ websockets 模組已安裝
 
 REM 檢查服務器是否運行
 echo 🔍 檢查服務器狀態...

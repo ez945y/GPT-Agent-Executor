@@ -24,6 +24,8 @@ if ! python -c "import websockets" 2>/dev/null; then
         echo "❌ 安裝 websockets 失敗"
         exit 1
     fi
+else
+    echo "✅ websockets 模組已安裝"
 fi
 
 # 檢查 8000 端口是否被佔用，若有則殺掉對應進程
@@ -44,31 +46,23 @@ else
     SERVER_RUNNING=false
 fi
 
-# 如果服務器未運行，啟動服務器
+# 捕捉 Ctrl+C 信號，結束後台伺服器進程
+cleanup() {
+    echo "🛑 收到中斷訊號，停止伺服器..."
+    if [ -n "$SERVER_PID" ]; then
+        kill $SERVER_PID
+    fi
+    exit 1
+}
+trap cleanup SIGINT SIGTERM
+
+# 如果服務器未運行，啟動伺服器
 if [ "$SERVER_RUNNING" = false ]; then
     echo "🚀 啟動伺服器..."
-    
-    # 檢測作業系統類型
-    if [[ "$OSTYPE" == "darwin"* ]]; then
-        # macOS
-        osascript -e 'tell application "Terminal" to do script "cd \"'$(pwd)'\" && conda activate ollama && python start_server.py"'
-    elif [[ "$OSTYPE" == "linux-gnu"* ]]; then
-        # Linux
-        if command -v gnome-terminal &> /dev/null; then
-            gnome-terminal -- bash -c "cd '$(pwd)' && conda activate ollama && python start_server.py; exec bash"
-        elif command -v konsole &> /dev/null; then
-            konsole -e bash -c "cd '$(pwd)' && conda activate ollama && python start_server.py; exec bash"
-        elif command -v xterm &> /dev/null; then
-            xterm -e bash -c "cd '$(pwd)' && conda activate ollama && python start_server.py; exec bash" &
-        else
-            echo "⚠️ 無法找到合適的終端模擬器，請手動啟動服務器"
-            echo "   命令：conda activate ollama && python start_server.py"
-        fi
-    else
-        echo "⚠️ 不支援的作業系統，請手動啟動服務器"
-        echo "   命令：conda activate ollama && python start_server.py"
-    fi
-    
+    # 在當前 shell 以後台模式啟動伺服器，並保存 PID
+    python start_server.py &
+    SERVER_PID=$!
+
     # 等待服務器啟動
     echo "⏳ 等待服務器啟動..."
     for i in {1..30}; do
@@ -79,7 +73,7 @@ if [ "$SERVER_RUNNING" = false ]; then
         sleep 1
         echo -n "."
     done
-    
+
     if ! curl -s --max-time 3 http://127.0.0.1:8000/cli/status > /dev/null 2>&1; then
         echo "❌ 服務器啟動失敗，請檢查錯誤訊息"
         exit 1
@@ -103,3 +97,9 @@ echo ==========================
 
 # 啟動客戶端
 python cli_client.py
+
+# 客戶端退出後停止伺服器
+if [ -n "$SERVER_PID" ]; then
+    echo "🛑 停止伺服器..."
+    kill $SERVER_PID
+fi
