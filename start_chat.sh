@@ -26,9 +26,17 @@ if ! python -c "import websockets" 2>/dev/null; then
     fi
 fi
 
+# 檢查 8000 端口是否被佔用，若有則殺掉對應進程
+PID=$(lsof -ti:8000)
+if [ -n "$PID" ]; then
+    echo "⚠️ 8000 端口被佔用，正在終止進程 $PID ..."
+    kill -9 $PID
+    sleep 1
+fi
+
 # 檢查服務器是否運行
 echo "🔍 檢查服務器狀態..."
-if curl -s http://127.0.0.1:8000/cli/status > /dev/null; then
+if curl -s --max-time 3 http://127.0.0.1:8000/cli/status > /dev/null 2>&1; then
     echo "✅ 服務器正在運行"
     SERVER_RUNNING=true
 else
@@ -64,7 +72,7 @@ if [ "$SERVER_RUNNING" = false ]; then
     # 等待服務器啟動
     echo "⏳ 等待服務器啟動..."
     for i in {1..30}; do
-        if curl -s http://127.0.0.1:8000/cli/status > /dev/null; then
+        if curl -s --max-time 3 http://127.0.0.1:8000/cli/status > /dev/null 2>&1; then
             echo "✅ 服務器已啟動"
             break
         fi
@@ -72,7 +80,7 @@ if [ "$SERVER_RUNNING" = false ]; then
         echo -n "."
     done
     
-    if ! curl -s http://127.0.0.1:8000/cli/status > /dev/null; then
+    if ! curl -s --max-time 3 http://127.0.0.1:8000/cli/status > /dev/null 2>&1; then
         echo "❌ 服務器啟動失敗，請檢查錯誤訊息"
         exit 1
     fi

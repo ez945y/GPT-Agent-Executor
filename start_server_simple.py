@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-服務器啟動腳本
+簡化的服務器啟動腳本
 """
 
 import os
@@ -48,7 +48,7 @@ def main():
         print("=" * 40)
         print("服務器地址: http://127.0.0.1:8000")
         print("CLI WebSocket: ws://127.0.0.1:8000/cli/ws")
-        print("使用 Ctrl+C 優雅關閉服務器")
+        print("使用 Ctrl+C 關閉服務器")
         print("=" * 40)
         
         uvicorn.run(
@@ -68,4 +68,4 @@ def main():
         print("👋 服務器已關閉")
 
 if __name__ == "__main__":
-    main()
+    main() 
