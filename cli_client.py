@@ -83,7 +83,7 @@ class WebSocketChatClient:
         
         while retry_count < max_retries:
             try:
-                self.websocket = await websockets.connect(WS_URL)
+                self.websocket = await websockets.connect(WS_URL, ping_interval=None)
                 self.connected = True
                 self.reconnect_attempts = 0  # 重置重連計數
                 await self.async_print("✅ 已連接到服務器")

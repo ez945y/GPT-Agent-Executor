@@ -63,9 +63,7 @@ async def cli_websocket_endpoint(websocket: WebSocket):
                 continue
             except Exception as e:
                 print(f"❌ CLI WebSocket 處理錯誤: {e}")
-                if websocket.client_state.value != 1:  # 如果連接已斷開，退出循環
-                    break
-                continue
+                break
                 
     except Exception as e:
         print(f"❌ CLI WebSocket 連接錯誤: {e}")
