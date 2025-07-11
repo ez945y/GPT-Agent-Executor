@@ -41,6 +41,13 @@ async def observe_thought(check_list: str) -> str:
         return check_list
     return "想一下要做什麼。"
 
+async def summarize(result: str) -> str:
+    """摘要指定內容。"""
+    if result and result != "":
+        await Logger.log("chat", await CachePool.get_len() + 1, f"總結來說: {result}")
+        return result
+    return "摘要失敗。"
+
 # 工具清單
 tools: Dict[str, Dict[str, Any]] = {
     "自然表達": {
@@ -53,7 +60,11 @@ tools: Dict[str, Dict[str, Any]] = {
         "args": "query:string",
         "description": "使用 Google 搜尋指定一個查詢。"
     },
-
+    "摘要": {
+        "func": summarize,
+        "args": "result:string",
+        "description": "摘要指定內容。"
+    },
 }
 
 target_tool: Dict[str, Dict[str, Any]] = {
@@ -93,7 +104,8 @@ def choose_tool(model_output: str) -> Dict[str, Any]:
         elif re.search(r"更新檢查清單|更新|檢查清單", model_output, re.IGNORECASE):
             # print(output_json.get("sentence"))
             return {"tool_name": "更新檢查清單", "args": {"check_list": output_json.get("check_list")}}
-        # 添加其他工具的選擇邏輯...
+        elif re.search(r"摘要|summarize", model_output, re.IGNORECASE):
+            return {"tool_name": "摘要", "args": {"result": output_json.get("result")}}
         return None
     except ValueError:
             return None

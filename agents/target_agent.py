@@ -37,7 +37,7 @@ class TargetAgent(Agent):
             tool = target_tool[tool_info["tool_name"]]["func"]
             tool_output = await tool(**tool_info['args'])
             if tool_output:
-                await CachePool.add({"我決定": tool_output})
+                await CachePool.add({"check_list": tool_output})
                 self.prompt.set_variable("check_list", tool_output)
 
     def _format_tool_list(self) -> str:
