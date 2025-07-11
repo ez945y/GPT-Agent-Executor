@@ -4,41 +4,25 @@ from utils.llm_model import model
 from utils.templates import think_prompt_template, personlitity_prompt_template
 from utils.locks import agent_lock
 import asyncio
+import dotenv
+import os
+
+dotenv.load_dotenv()
 
 class ThinkAgent(Agent):
     """思考代理"""
 
     async def start(self):
         """啟動思考代理"""
-        await super().start()
-        with agent_lock:
-            self.set_prompt(personlitity_prompt_template)
-            # prompt_text = self.prompt.format()
-            # response = model.generate(prompt_text, self.model_name)
-            # await CachePool.add({"你將扮演": prompt_text})
-            
-            self.set_prompt(think_prompt_template)
-        await self.step()
+        await super().start(think_prompt_template, int(os.getenv("THINK_INTERVAL")))
+        # self.set_prompt(personlitity_prompt_template)
+        await asyncio.sleep(2)
+        await self._step()
         
     async def step(self):
         """執行思考代理步驟"""
-        try:
-            while self.running:
-                with agent_lock:
-                    self.prompt.set_variable("cache_pool", CachePool.get())
-                    prompt_text = self.prompt.format()
-                    # print(prompt_text)
-
-                    response = model.generate(prompt_text)
-                    await CachePool.add({"我": response})
-                
-                # 檢查是否應該停止
-                if not self.running:
-                    break
-                    
-                await asyncio.sleep(6)
-        except Exception as e:
-            print(f"❌ ThinkAgent 錯誤: {e}")
-        finally:
-            print("🛑 ThinkAgent 已停止")
-            self.running = False
+        self.prompt.set_variable("cache_pool", CachePool.get())
+        prompt_text = self.prompt.format()
+        
+        response = model.generate(prompt_text)
+        await CachePool.add({"我": response})

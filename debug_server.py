@@ -65,7 +65,7 @@ except Exception as e:
 
 # 4. 檢查目錄結構
 print("📁 檢查目錄結構...")
-required_dirs = ["server", "agents", "utils", "static"]
+required_dirs = ["server", "agents", "utils"]
 for dir_name in required_dirs:
     if os.path.exists(dir_name):
         print(f"✅ {dir_name} 目錄存在")
@@ -76,7 +76,6 @@ for dir_name in required_dirs:
 print("🔧 嘗試創建 FastAPI 應用...")
 try:
     from fastapi.middleware.cors import CORSMiddleware
-    from fastapi.staticfiles import StaticFiles
     
     app = FastAPI()
     
@@ -90,15 +89,6 @@ try:
     
     app.include_router(router)
     app.include_router(cli_router, prefix="/cli")
-    
-    # 檢查靜態目錄
-    if os.path.exists("static"):
-        app.mount("/static", StaticFiles(directory="static"), name="static")
-        print("✅ 靜態文件掛載成功")
-    else:
-        print("⚠️ 靜態目錄不存在，跳過掛載")
-    
-    print("✅ FastAPI 應用創建成功")
     
 except Exception as e:
     print(f"❌ 創建 FastAPI 應用失敗: {e}")
