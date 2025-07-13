@@ -7,8 +7,19 @@ from server.chat_interface import ChatInterface
 from utils.logger import Logger
 from utils.public_cache import CachePool
 import uuid
+from fastapi.responses import FileResponse
 
 router = APIRouter()
+
+@router.get(
+    "/{file_path:path}",
+    summary="Get File",
+)
+async def get_file(file_path: str):
+    full_path = f'./snapshot/{file_path}'
+    if not os.path.exists(full_path):
+        raise FileNotFoundError(file_path=full_path)
+    return FileResponse(full_path)
 
 @router.websocket("/ws")
 async def websocket_endpoint(websocket: WebSocket):

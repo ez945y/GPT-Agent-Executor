@@ -11,6 +11,7 @@ class CachePool:
     _lock: threading.Lock = threading.Lock()  # 線程鎖，用於保證線程安全
     _current_target: str = "目前還沒有目標"  # 當前目標，預設為 "目前還沒有目標"
     _check_list: List[Dict[str, str]] = []  # 檢查清單，格式: [{"item": "描述", "status": "pending/completed"}]
+    _image_url: str = None  # 當前圖片 URL
 
     @classmethod
     async def add(cls, input: Any) -> None:
@@ -107,3 +108,26 @@ class CachePool:
         """
         with cls._lock:
             cls._check_list = check_list.copy()
+
+    @classmethod
+    def get_image_url(cls) -> str:
+        """
+        獲取當前圖片 URL。
+
+        Returns:
+            str: 當前圖片 URL。
+        """
+        url = cls._image_url
+        cls._image_url = None
+        return url
+    
+    @classmethod
+    def set_image_url(cls, image_url: str) -> None:
+        """
+        設置當前圖片 URL。
+
+        Args:
+            image_url (str): 新的圖片 URL。
+        """
+        with cls._lock:
+            cls._image_url = image_url

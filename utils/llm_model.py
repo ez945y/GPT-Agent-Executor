@@ -3,6 +3,7 @@ import google.generativeai as genai
 from google.api_core.exceptions import GoogleAPIError
 from abc import ABC, abstractmethod
 from utils.setting import Setting
+import requests
 
 class BaseModel(ABC):
     """模型抽象類別"""
@@ -19,10 +20,21 @@ class BaseModel(ABC):
 class OllamaModel(BaseModel):
     """Ollama 模型類別"""
 
-    def generate(self, prompt, model_name=Setting.MODEL_NAME):
-        """使用 Ollama 模型生成文本"""
-        response = ollama.generate(model=model_name, prompt=prompt)
-        return response['response']
+    def generate(self, prompt, model_name=Setting.MODEL_NAME, image_url=None):
+        if not image_url:
+            response = ollama.generate(model=model_name, prompt=prompt)
+            return response['response']
+        else:
+            try:
+                response = requests.get(image_url)
+                response.raise_for_status()  # Raise an exception for bad status codes
+                image_bytes = response.content
+                response = ollama.generate(model=model_name, prompt=prompt, images=[image_bytes])
+                return response['response']
+            except Exception as e:
+                print(f"Error downloading image: {e}")
+                response = ollama.generate(model=model_name, prompt=prompt)
+                return response['response']
 
     async def generate_async(self, prompt, model_name="llama3.2-1b"):
         """非同步使用 Ollama 模型生成文本（Ollama 不直接支援非同步）"""

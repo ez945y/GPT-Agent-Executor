@@ -7,6 +7,7 @@ import re
 import json
 from utils.logger import Logger
 from utils.public_cache import CachePool
+import imgkit
 
 # 假設你已經安裝了 google-search-results 函式庫
 async def web_search(query: str) -> str:
@@ -20,6 +21,9 @@ async def web_search(query: str) -> str:
                 title = first_result.get("title", "無標題")
                 snippet = first_result.get("snippet", "無摘要")
                 link = first_result.get("link", "#")
+                if link != "#":
+                    imgkit.from_url(link, f"./snapshot/{title}.png")
+                    CachePool.set_image_url(f"http://127.0.0.1:8000/{title}.png")
                 
                 page_content = ""
                 if link != "#":

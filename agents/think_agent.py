@@ -24,5 +24,5 @@ class ThinkAgent(Agent):
         self.prompt.set_variable("cache_pool", CachePool.get())
         prompt_text = self.prompt.format()
         
-        response = model.generate(prompt_text)
+        response = model.generate(prompt_text, image_url=CachePool.get_image_url())
         await CachePool.add({"我": response})
