@@ -1,4 +1,6 @@
 from typing import List, Dict, Callable, Any
+import requests
+from bs4 import BeautifulSoup
 from serpapi import GoogleSearch
 from utils.setting import Setting
 import re
@@ -17,8 +19,21 @@ async def web_search(query: str) -> str:
                 first_result = results[0]
                 title = first_result.get("title", "無標題")
                 snippet = first_result.get("snippet", "無摘要")
-                # link = first_result.get("link", "#")
-                result = f"標題： {title}\n摘要：{snippet}"
+                link = first_result.get("link", "#")
+                
+                page_content = ""
+                if link != "#":
+                    try:
+                        response = requests.get(link, timeout=5)
+                        response.raise_for_status()
+                        soup = BeautifulSoup(response.text, 'html.parser')
+                        page_content = soup.get_text()
+                        page_content = ' '.join(page_content.split())
+                        page_content = page_content[:500]
+                    except requests.RequestException as e:
+                        page_content = f"無法讀取網頁內容: {e}"
+
+                result = f"標題： {title}\n摘要：{snippet}\n內容：{page_content}"
                 await Logger.log("chat", await CachePool.get_len() + 1, f"搜尋了: {query}\n{result}")
                 return result
             else:
