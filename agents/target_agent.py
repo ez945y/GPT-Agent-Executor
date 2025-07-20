@@ -1,22 +1,17 @@
 from agents.base_agent import Agent
 from utils.public_cache import CachePool
-from utils.llm_model import model
+from utils.llm_model import target_model as model
 from utils.templates import target_prompt_template
 from utils.tools import choose_tool, target_tool
-from utils.locks import agent_lock
 from utils.logger import Logger
-import asyncio
-import dotenv
-import os
-
-dotenv.load_dotenv()
+from utils.setting import Setting
 
 class TargetAgent(Agent):
     """工具代理，根據快取池內容選擇工具"""
 
     async def start(self, init_target):
         """啟動工具代理"""
-        await super().start(target_prompt_template, int(os.getenv("TARGET_INTERVAL")))
+        await super().start(target_prompt_template, Setting.TARGET_INTERVAL)
         if init_target is None:
             init_target = "我肚子餓了，想吃飯，要吃什麼"
         self.prompt.set_variable("current_target", init_target)

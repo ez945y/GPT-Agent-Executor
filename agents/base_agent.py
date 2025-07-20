@@ -11,27 +11,17 @@ class Agent:
     此類別定義了代理的基本結構和行為，包括設定模型、提示、啟動和執行步驟。
     """
 
-    def __init__(self, model_name: str = Setting.MODEL_NAME):
+    def __init__(self):
         """
         初始化代理
 
         設定模型名稱、提示和歷史記錄。
         """
-        self.model_name: Optional[str] = model_name  # 模型名稱
         self.prompt: Optional[Prompt] = None  # 提示物件
         self.history: List[dict] = []  # 歷史記錄（快取池）
         self.running: bool = False  # 運行狀態
         self.sleep_time: int = 0  # 睡眠時間
         self.sequence: int = 0  # 序列號
-
-    def set_model(self, model_name: str):
-        """
-        設定模型
-
-        Args:
-            model_name (str): 模型名稱。
-        """
-        self.model_name = model_name
 
     def set_prompt(self, template: str):
         """
@@ -82,7 +72,10 @@ class Agent:
         try:
             while self.running:
                 with agent_lock:
-                    await self.step()
+                    try:
+                        await self.step()
+                    except Exception as e:
+                        print(f"{self.__class__.__name__} 錯誤: {e}")
                 if not self.running:
                     break
                 await asyncio.sleep(self.sleep_time)
