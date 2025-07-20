@@ -15,19 +15,16 @@ if %errorlevel% neq 0 (
 
 echo ✅ Python 已安裝
 
-REM 檢查 websockets 模組
-python -c "import websockets" >nul 2>&1
+REM 檢查必要的模組是否已安裝
+echo 🔍 檢查依賴...
+python -c "import fastapi, uvicorn, websockets, requests, ollama, google.generativeai, serpapi, pydantic, openai" >nul 2>&1
 if %errorlevel% neq 0 (
-    echo 📦 安裝 websockets 模組...
-    python -m pip install websockets --user
-    if %errorlevel% neq 0 (
-        echo ❌ 安裝 websockets 失敗
-        pause
-        exit /b 1
-    )
+    echo ❌ 缺少必要的依賴，請先運行 install_requirements.bat
+    echo 或者手動安裝：pip install -r requirements.txt
+    pause
+    exit /b 1
 )
-
-echo ✅ websockets 模組已安裝
+echo ✅ 所有依賴已安裝
 
 REM 檢查服務器是否運行
 echo 🔍 檢查服務器狀態...

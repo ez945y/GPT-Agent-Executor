@@ -2,7 +2,6 @@ from fastapi import APIRouter, HTTPException, WebSocket, WebSocketDisconnect
 from pydantic import BaseModel
 import asyncio
 import json
-import uuid
 from server.chat_interface import ChatInterface
 from utils.logger import Logger
 from utils.public_cache import CachePool

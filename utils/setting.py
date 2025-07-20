@@ -6,6 +6,7 @@ load_dotenv()
 class Setting():
     SERP_API_KEY = os.getenv("SERP_API_KEY")
     GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     THINK_MODEL_NAME = os.getenv("THINK_MODEL_NAME", "gemini-flash-2.0")
     THINK_MODEL_TYPE = os.getenv("THINK_MODEL_TYPE", "gemini") 
     SUPPORT_IMAGE = os.getenv("SUPPORT_IMAGE", "false")

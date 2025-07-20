@@ -16,17 +16,15 @@ if ! command -v python &> /dev/null; then
     exit 1
 fi
 
-# 檢查 websockets 模組
-if ! python -c "import websockets" 2>/dev/null; then
-    echo "📦 安裝 websockets 模組..."
-    python -m pip install websockets
-    if [ $? -ne 0 ]; then
-        echo "❌ 安裝 websockets 失敗"
-        exit 1
-    fi
-else
-    echo "✅ websockets 模組已安裝"
+# 檢查必要的模組是否已安裝
+echo "🔍 檢查依賴..."
+python -c "import fastapi, uvicorn, websockets, requests, ollama, google.generativeai, serpapi, pydantic, openai" 2>/dev/null
+if [ $? -ne 0 ]; then
+    echo "❌ 缺少必要的依賴，請先運行 ./install_requirements.sh"
+    echo "或者手動安裝：pip install -r requirements.txt"
+    exit 1
 fi
+echo "✅ 所有依賴已安裝"
 
 # 檢查 8000 端口是否被佔用，若有則殺掉對應進程
 PID=$(lsof -ti:8000)

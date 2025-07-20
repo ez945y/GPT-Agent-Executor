@@ -9,3 +9,4 @@ pydantic==2.5.0
 python-multipart==0.0.6
 aioconsole
 beautifulsoup4==4.12.3
+openai>=1.0
